@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Math at the Library</title>
+<style>
+body {margin:0;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+	right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+	margin:0;
+	top:0;
+	padding:0;
+	width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar a {
+
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+
+.active  {
+    background-color: #4CAF50;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 24px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.navbar a:hover:not(.active), .dropdown:hover .dropbtn {
+    background-color: #979599;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #666666;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="nav-placeholder">
+</div>
+
+<div style="padding:20px;margin-top:0px;height:600px;">
+
+<h2 align="left">Our Location</h2>
+
+<div class ="row">
+<div class="column">
+<h3 > Katie Wheeler Library</h3>
+<p>13109 Old Myford Rd, Irvine, CA 92602</p>
+<p>On the basement floor</p>
+<p>Tuesday 4-5pm</p>
+<img src="https://c1.staticflickr.com/1/803/27146442408_fe9e8fc2cd_b.jpg" style="width:70%">
+</div>
+
+<div class="column">
+<h3 >Foothill Ranch Library</h3>
+<p>27002 Cabriole, Foothill Ranch, CA 92610</p>
+<p>Community Center</p>
+<p>Tuesday 4-5pm</p>
+<img src="http://www.ridgela.com/wp-content/uploads/2018/05/1-31.jpg" style="width:70%">
+</div>
+
+</div>
+
+<br><br>
+<div class ="row">
+
+<div class="column">
+<h3 >University Park Library</h3>
+<p>4512 Sandburg Way, Irvine, CA 92612</p>
+<p>Meeting Room</p>
+<p>Wednesday 4-5pm</p>
+<img src="https://s3-media1.fl.yelpcdn.com/bphoto/mnM9fI7BKjVNhEcqek_Vgg/348s.jpg" style="width:70%">
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+
+</script>
+
+</body>
+</html> 

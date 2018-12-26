@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Math at the Library</title>
+<style>
+body {margin:0;}
+* {
+    box-sizing: border-box;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+	margin:0;
+	top:0;
+	padding:0;
+	width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.navbar a {
+
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+
+.active  {
+    background-color: #4CAF50;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.navbar a:hover:not(.active), .dropdown:hover .dropbtn {
+    background-color: #979599;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #666666;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="nav-placeholder">
+</div>
+<div style="padding:20px;margin-top:0px;height:600px;">
+
+<h2 align="left">Current Members</h2>
+<div class ="row">
+<div class="column" style="background-color:#7fe244;">
+    <h2>Alex Yan</h2>
+    <p><b>Very tricky guy, Goes by the name PruneJames, Boonbames, or JamesPrune</b></p>
+	<p>As one of the founders, Alex is a prominent voice in this Organization. He enjoys helping kids. 
+  </div>
+  <div class="column" style="background-color:#adf;">
+    <h2>Kevin Du</h2>
+    <p>The Dukevin himself</p>
+<img src="random.PNG" alt="Picture of Dukevin" style="float:right; width:309px;height:358px;">
+
+</div>
+
+
+<div class="column" style="background-color:#fda;">
+<h2>Arvin Ding</h2>
+    <p>Major contributor. Bad at making websites.</p>
+    
+  </div>
+
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+
+</body>
+</html> 
