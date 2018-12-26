@@ -71,8 +71,10 @@ body {margin:0;}
     text-align: left;
 }
 
-h1 {
-	font-size:100px;
+h2 {
+	margin-top:30px;
+	margin-bottom:50px;
+	font-size:80px;
     text-align: center;
 }
 
@@ -90,13 +92,13 @@ h1 {
     background: #e7e7e7;
 }
 btn {
-	border:none;
-  margin-left:110px;
-  line-height: 60px;
+border:none;
+  margin-left:8%;
+  line-height: 70px;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 80px;
   background: inherit;
-  padding: 70px 10%;
+  padding: 30px 10%;
   display: inline-block;
 }
 btn:hover {
@@ -110,11 +112,11 @@ btn:hover {
 
 <div id="nav-placeholder">
 </div>
-<div style="padding:20px;margin-top:0px;height:600px;">
+<div style="padding:20px;margin-top:0px;height:400px;">
 <body onload="begin()">
-<h1>What is the result of?</h1>
-<h1 id="question"></h1>
-<h1 id="message"></h1>
+<h2>What is the result of?</h2>
+<h2 id="question"></h2>
+<h2 id="message"></h2>
 
 <!--<button class="btn default">Info</button>
 <button class="btn default">Warning</button>-->
@@ -143,12 +145,24 @@ function begin(){
 	var a1 = document.createElement("btn");
 	var a2 = document.createElement("btn");
 	var a3 = document.createElement("btn");
+	
 	var add=Math.floor(Math.random() * 21)-10;
 	a1.innerHTML= ans+((add==0)?add+1: add);
+	
+	add1=Math.floor(Math.random() * 21)-10;
+	while(add==add1){
+		add1=Math.floor(Math.random() * 21)-10;
+	}
+	
+	a2.innerHTML= ans+((add1==0)?add1+1: add1);
+	
+	add2=Math.floor(Math.random() * 21)-10;
+	while(add2==add||add2==add1){
+		add2=Math.floor(Math.random() * 21)-10;
+	}
 	add=Math.floor(Math.random() * 21)-10;
-	a2.innerHTML= ans+((add==0)?add+1: add);
-	add=Math.floor(Math.random() * 21)-10;
-	a3.innerHTML= ans+((add==0)?add+1: add);
+	a3.innerHTML= ans+((add2==0)?add2+1: add2);
+	
 	 if(x==1){
 		a1.innerHTML = ans;
 	}else if(x==2){
