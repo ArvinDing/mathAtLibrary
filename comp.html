@@ -77,7 +77,7 @@ function begin(){
 	 
     document.getElementById("questionA").innerHTML = a;
 	  document.getElementById("questionB").innerHTML = b;
-	var x = Math.floor((Math.random() * 3) + 1);
+	
 	var a1 = document.createElement("btn");
 	var a2 = document.createElement("btn");
 	var a3 = document.createElement("btn");
@@ -94,31 +94,21 @@ function begin(){
 	a2.addEventListener ("click",function(){check(ans,2)});
 	a3.addEventListener ("click",function(){check(ans,3)});
 }
+
+Wmessages = ["Yay!","Wow","Nicely Done.","Correct","Good Job","Nice","Grokked it","Superb.","Amazing","You Rock!","Epic"]
+Lmessages = ["Try again","Close","Almost","Keep Trying"]
 function check(ans, choice){
 <!--alert("test");
 	if(ans==choice){
 	document.getElementById("message").style.color = "green";
-	var x = Math.floor(Math.random() * 5 );
-	if(x==0)
-	document.getElementById("message").innerHTML = "Yay";
-	else if(x==1)
-	document.getElementById("message").innerHTML = "Wow";
-	else if(x==2)
-	document.getElementById("message").innerHTML = "Nicely Done";
-	else if(x==3)
-	document.getElementById("message").innerHTML = "Correct";
-	else
-	document.getElementById("message").innerHTML = "Good Job";
+	var x = Math.floor(Math.random() * Wmessages.length );
+	document.getElementById("message").innerHTML = Wmessages[x];
 	 window.setTimeout(function(){reload()}, 1000);
 	}else{
 	document.getElementById("message").style.color = "red";
-	var x = Math.floor(Math.random() * 2 );
-	if(x==0)
-	document.getElementById("message").innerHTML = "Try again";
-	else
-	 document.getElementById("message").innerHTML = "Close";
+	var x = Math.floor(Math.random() * Lmessages.length );
+	document.getElementById("message").innerHTML = Lmessages[x];
 	}
-	
 }
 function reload(){
 location.reload();
