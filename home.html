@@ -80,12 +80,12 @@ h1{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -99,17 +99,19 @@ h1{
 </head>
 <body>
 
- 
+
 <div id="nav-placeholder">
 </div>
 
 <div style="padding:20px;margin-top:0px;height:600px;">
 <h2 align="left">Who are we?</h2>
-<p>Math at the Library is a non profit organization where anyone from 7th-12th grade can help give back to the community and tutor younger kids. <p>
+
+
+<p>Math at the Library is a non profit organization where anyone from 7th-12th grade can give back to the community and tutor younger kids. <p>
 
 
 <div class="slideshow-container">
- 
+
 <div class="mySlides fade"   >
   <div class="numbertext">1 / 3</div>
   <img src="fun.JPG" style="width:100%">
@@ -135,9 +137,9 @@ h1{
 <br>
 
 <div style="text-align:left">
-  <span class="dot" onclick="currentSlide(0)"></span> 
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
 </div>
 
 
@@ -166,14 +168,14 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  
+
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex].style.display = "block";  
+  slides[slideIndex].style.display = "block";
   dots[slideIndex].className += " active";
 }
 var ONE_FRAME_TIME = 7500 ;
@@ -185,4 +187,4 @@ setInterval( mainloop, ONE_FRAME_TIME )
 </script>
 
 </body>
-</html> 
+</html>
