@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Math at the Library</title>
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 32.75%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 25px 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="nav-placeholder">
+</div>
+<div style="padding:20px;margin-top:0px;height:600px;">
+
+<h2 align="left">Current Members</h2>
+<div class ="row">
+<div class="column" style="background-color:#adf;">
+  <h2>Alex Yan</h2>
+  <p><b>Co-founder</b></p>
+	<p class="left">
+    Alex has always enjoyed doing math problems since he was young. He enjoys helping kids discover and boost their enjoyment and understanding of math.
+  </p>
+  <p class="left">
+    In his free time, Alex enjoys snowboarding, backpacking, and playing video games. He also plays the violin.
+  </p>
+	<ul class="left">
+    <li> 10ᵗʰ grade </li>
+		<li> AIME qualifier </li>
+		<li> Eagle scout </li>
+		<li> Current Math Class: AP Calculus BC </li>
+  </ul>
+  <img src="img/alex.jpg" title="Hello" style="float:center; width:309px;height:358px;">
+</div>
+  <div class="column" style="background-color:#adf;">
+    <h2>Kevin Du</h2>
+	  <p><b>Co-founder</b></p>
+		<p class="left">
+      Kevin likes to take math and run with it. Being a self-proclaimed math nerd has brought doubt from others who don&#39;t understand the purpose of math. He likes to help kids learn more about math and to enjoy math like he does.
+		</p>
+		<p class="left">
+		In his free time, he likes to watch math videos, talk with friends about the game he created, and play saxophone.
+		</p>
+    <ul class="left">
+      <li> 10ᵗʰ grade </li>
+  		<li> USA Junior Math Olympiad qualifier </li>
+  		<li> USACO Plantinum contestant </li>
+  		<li> Current Math Class: AP Calculus BC </li>
+    </ul>
+    <img src="img/random.PNG" title="Picture of Dukevin" style="float:center; width:309px;height:358px;">
+
+</div>
+
+
+<div class="column" style="background-color:#adf;">
+<h2>Arvin Ding</h2>
+   <p><b>Co-founder</b></p>
+   <p class="left">Bad at making websites.</p>
+   <ul class="left">
+      <li> 10ᵗʰ grade </li>
+			<li> USACO Plantinum contestant </li>
+		  <li> Current Math Class: AP Calculus BC </li>
+   </ul>
+</div>
+
+</div>
+
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+
+</body>
+</html>

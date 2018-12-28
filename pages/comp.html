@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Math at the Library</title>
+<style>
+
+
+h2 {
+	margin-top:30px;
+	margin-bottom:50px;
+	font-size:80px;
+    text-align: center;
+}
+
+
+btn {
+	border:none;
+  margin-left:8%;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 80px;
+  background: inherit;
+  padding: 30px 10%;
+  display: inline-block;
+}
+btn:hover {
+  background: lightgrey;
+}
+.circle {
+  height: 40px;
+  width: 40px;
+  background-color: #e9e9e9;
+  border-radius: 50%;
+  display: inline-block;
+  border:4px solid black;
+}
+
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="nav-placeholder">
+</div>
+<div style="padding:20px;margin-top:0px;height:400px;">
+<body onload="begin()">
+<h2>What is the relationship between?</h2>
+<h2>
+	<span id="questionA" ></span>
+	<span class="circle" ></span>
+	<span id="questionB" ></span>
+</h2>
+<h2 id="message"></h2>
+
+<!--<button class="btn default">Info</button>
+<button class="btn default">Warning</button>-->
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+function begin(){
+ document.getElementById("message").innerHTML = "";
+	var x = Math.floor((Math.random() * 2) + 1);
+	var a;
+	 var b ;
+	 var ans=0;
+	  a = Math.floor((Math.random() * 11));
+	  b= Math.floor((Math.random() * 11));
+	if(a==b){
+		ans=2;
+	}else if(a<b){
+		ans=1;
+	}else{
+		ans=3;
+	}
+	 
+    document.getElementById("questionA").innerHTML = a;
+	  document.getElementById("questionB").innerHTML = b;
+	
+	var a1 = document.createElement("btn");
+	var a2 = document.createElement("btn");
+	var a3 = document.createElement("btn");
+	a1.innerHTML="<";
+	a2.innerHTML="=";
+	a3.innerHTML=">";
+	
+	var body = document.getElementsByTagName("body")[0];
+	body.appendChild(a1);
+	body.appendChild(a2);
+	body.appendChild(a3);
+	
+	a1.addEventListener ("click",function(){check(ans,1)});
+	a2.addEventListener ("click",function(){check(ans,2)});
+	a3.addEventListener ("click",function(){check(ans,3)});
+}
+
+Wmessages = ["Yay!","Wow","Nicely Done.","Correct","Good Job","Nice","Grokked it","Superb.","Amazing","You Rock!","Epic"]
+Lmessages = ["Try again","Close","Almost","Keep Trying"]
+function check(ans, choice){
+<!--alert("test");
+	if(ans==choice){
+	document.getElementById("message").style.color = "green";
+	var x = Math.floor(Math.random() * Wmessages.length );
+	document.getElementById("message").innerHTML = Wmessages[x];
+	 window.setTimeout(function(){reload()}, 1000);
+	}else{
+	document.getElementById("message").style.color = "red";
+	var x = Math.floor(Math.random() * Lmessages.length );
+	document.getElementById("message").innerHTML = Lmessages[x];
+	}
+}
+function reload(){
+location.reload();
+}
+</script>
+
+</body>
+</html> 

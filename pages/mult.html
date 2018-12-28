@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Math at the Library</title>
+<style>
+
+
+h2 {
+	margin-top:30px;
+	margin-bottom:50px;
+	font-size:80px;
+    text-align: center;
+}
+
+
+.default {
+    color: black;
+	
+}
+
+.default:hover {
+    background: #e7e7e7;
+}
+btn {
+	border:none;
+  margin-left:8%;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 80px;
+  background: inherit;
+  padding: 30px 9%;
+  display: inline-block;
+}
+btn:hover {
+  background: lightgrey;
+}
+
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div id="nav-placeholder">
+</div>
+
+<div style="padding:20px;margin-top:0px;height:400px;">
+<body onload="begin()">
+<h2>What is the result of?</h2>
+<h2 id="question"></h2>
+<h2 id="message"></h2>
+
+<!--<button class="btn default">Info</button>
+<button class="btn default">Warning</button>-->
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+function begin(){
+ document.getElementById("message").innerHTML = "";
+	var x = Math.floor((Math.random() * 2) + 1);
+	var oper="";
+	var a;
+	 var b ;
+	 var ans=0;
+	  a = Math.floor((Math.random() * 10) + 1);
+	  b= Math.floor((Math.random() * 10) + 1);
+	 if(x==1){
+	 oper="&times";
+	 ans=a*b;
+	 }else{
+	 a = Math.floor((Math.random() * 10) + 1);
+	  b= Math.floor((Math.random() * 10) + 1);
+	 oper="&divide";
+	 ans=a;
+	 a=a*b;
+	 }
+	 
+    document.getElementById("question").innerHTML = a+oper+b;
+	var x = Math.floor((Math.random() * 3) + 1);
+	var a1 = document.createElement("btn");
+	var a2 = document.createElement("btn");
+	var a3 = document.createElement("btn");
+	if(x==1){
+	var add=Math.floor(Math.random() * 30)-15;
+	if(add==0)
+	add=1;
+	a1.innerHTML= ans+add;
+	add=Math.floor(Math.random() * 30)-15;
+	if(add==0)
+	add=1;
+	a2.innerHTML= ans+add;
+	add=Math.floor(Math.random() * 30)-15;
+	if(add==0)
+	add=1;
+	a3.innerHTML=ans+add;
+	}else{
+	var add=Math.floor(Math.random() * 21)-10;
+	a1.innerHTML= ans+((add==0)?add+1: add);
+	add1=Math.floor(Math.random() * 21)-10;
+	while(add==add1){
+		add1=Math.floor(Math.random() * 21)-10;
+	}
+	a2.innerHTML= ans+((add1==0)?add1+1: add1);
+	add2=Math.floor(Math.random() * 21)-10;
+	while(add1==add2||add2==add){
+	add2=Math.floor(Math.random() * 21)-10;
+	}
+	a3.innerHTML= ans+((add2==0)?add2+1: add2);
+	}
+	
+	 if(x==1){
+		a1.innerHTML = ans;
+	}else if(x==2){
+		a2.innerHTML = ans;
+	}else{
+		a3.innerHTML = ans;
+	}
+	var body = document.getElementsByTagName("body")[0];
+	body.appendChild(a1);
+	body.appendChild(a2);
+	body.appendChild(a3);
+	
+	a1.addEventListener ("click",function(){check(x,1)});
+	a2.addEventListener ("click",function(){check(x,2)});
+	a3.addEventListener ("click",function(){check(x,3)});
+}
+function check(ans, choice){
+<!--alert("test");
+	if(ans==choice){
+	document.getElementById("message").style.color = "green";
+	var x = Math.floor(Math.random() * 5 );
+	if(x==0)
+	document.getElementById("message").innerHTML = "Yay";
+	else if(x==1)
+	document.getElementById("message").innerHTML = "Wow";
+	else if(x==2)
+	document.getElementById("message").innerHTML = "Nicely Done";
+	else if(x==3)
+	document.getElementById("message").innerHTML = "Correct";
+	else
+	document.getElementById("message").innerHTML = "Good Job";
+	 window.setTimeout(function(){reload()}, 1000);
+	}else{
+	document.getElementById("message").style.color = "red";
+	var x = Math.floor(Math.random() * 2 );
+	if(x==0)
+	document.getElementById("message").innerHTML = "Try again";
+	else
+	 document.getElementById("message").innerHTML = "Close";
+	}
+	
+}
+function reload(){
+location.reload();
+}
+</script>
+
+</body>
+</html> 
