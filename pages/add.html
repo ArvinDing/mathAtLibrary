@@ -2,75 +2,13 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+<link rel="stylesheet" type="text/css" href="styles.css">
 <title>Math at the Library</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <style>
-body {margin:0;}
-
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-	margin:0;
-	top:0;
-	padding:0;
-	width:100%;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background-color: lightblue;
 }
-
-.navbar a {
-
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-}
-
-
-.active  {
-    background-color: #4CAF50;
-}
-
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 20px 20px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-
-.navbar a:hover:not(.active), .dropdown:hover .dropbtn {
-    background-color: #979599;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #666666;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: white;
-    padding: 20px 20px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
 h2 {
 	margin-top:30px;
 	margin-bottom:50px;
@@ -78,35 +16,7 @@ h2 {
     text-align: center;
 }
 
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.default {
-    color: black;
-	
-}
-
-.default:hover {
-    background: #e7e7e7;
-}
-btn {
-border:none;
-  margin-left:8%;
-  line-height: 70px;
-  font-weight: bold;
-  font-size: 80px;
-  background: inherit;
-  padding: 30px 10%;
-  display: inline-block;
-}
-btn:hover {
-  background: lightgrey;
-}
-
 </style>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 
@@ -139,30 +49,30 @@ function begin(){
 	 oper="-";
 	 ans=a-b;
 	 }
-	 
+
     document.getElementById("question").innerHTML = a+oper+b;
 	var x = Math.floor((Math.random() * 3) + 1);
 	var a1 = document.createElement("btn");
 	var a2 = document.createElement("btn");
 	var a3 = document.createElement("btn");
-	
+
 	var add=Math.floor(Math.random() * 21)-10;
 	a1.innerHTML= ans+((add==0)?add+1: add);
-	
+
 	add1=Math.floor(Math.random() * 21)-10;
 	while(add==add1){
 		add1=Math.floor(Math.random() * 21)-10;
 	}
-	
+
 	a2.innerHTML= ans+((add1==0)?add1+1: add1);
-	
+
 	add2=Math.floor(Math.random() * 21)-10;
 	while(add2==add||add2==add1){
 		add2=Math.floor(Math.random() * 21)-10;
 	}
 	add=Math.floor(Math.random() * 21)-10;
 	a3.innerHTML= ans+((add2==0)?add2+1: add2);
-	
+
 	 if(x==1){
 		a1.innerHTML = ans;
 	}else if(x==2){
@@ -174,7 +84,7 @@ function begin(){
 	body.appendChild(a1);
 	body.appendChild(a2);
 	body.appendChild(a3);
-	
+
 	a1.addEventListener ("click",function(){check(x,1)});
 	a2.addEventListener ("click",function(){check(x,2)});
 	a3.addEventListener ("click",function(){check(x,3)});
@@ -203,7 +113,7 @@ function check(ans, choice){
 	else
 	 document.getElementById("message").innerHTML = "Close";
 	}
-	
+
 }
 function reload(){
 location.reload();
@@ -211,4 +121,4 @@ location.reload();
 </script>
 
 </body>
-</html> 
+</html>
