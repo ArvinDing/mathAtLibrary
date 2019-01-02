@@ -5,7 +5,7 @@ import os
 class StaticServer(BaseHTTPRequestHandler):
  
     def do_GET(self):
-        root = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'Website')
+        root = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pages')
         print(root)
         if self.path == '/':
             filename = root + '/index.html'
