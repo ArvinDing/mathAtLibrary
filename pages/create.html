@@ -23,6 +23,7 @@ input[type=textA]{
 
 h3{
  word-spacing: 30px;
+ font-family: Lucida Sans Unicode;
 }
 
 
@@ -55,13 +56,13 @@ buttonA:hover{
 
 
 <form id="info">
-Characters(2 - 3):   
+Characters(2 - 3):
 <input type="text" name="char" value=2>
 X Cells:
 <input type="text" name="xVal" value=2>
 Y Cells:
  <input type="text" name="yVal" value=1>
- 
+
 </form>
 
 
@@ -136,7 +137,7 @@ function parse(array,r,c){
 }
 
 function makeLevel(){
-  
+
 	x = document.getElementById("info");
 	charsA[0]=(x.elements[0].value);
 	boardxA[0]=(x.elements[1].value);
@@ -145,11 +146,11 @@ function makeLevel(){
 	//hwall,switch,vwalls
 	data = readTable("switchtable",boardyA[0],boardxA[0]);
 	parse(data,boardyA[0],boardxA[0]);
-	
+
 	hWallsA[0] = readTable("hwalltable",boardyA[0]-1,boardxA[0]);
 	vWallsA[0] = swap(readTable("vwalltable",boardyA[0],boardxA[0]-1),boardyA[0],boardxA[0]-1);
 	setLevel(0);
-	
+
 }
 
 function tableRemove(tablename){
@@ -178,11 +179,11 @@ function tableCreate(tablename,tableR,tableC) {
   tbl.style.width = (boardxA[0]*30+"px");
   tbl.style.height = (boardyA[0]*30+"px");
   tbl.setAttribute('border', '5');
-  tbody = document.createElement(tablename) 
+  tbody = document.createElement(tablename)
   for (i = 0; i < tableR; i++) {
     tr = document.createElement('tr');
     for (j = 0; j < tableC; j++) {
-    
+
         td = document.createElement('td');
         //td.appendChild(document.createTextNode('\u0020'))
 		input = document.createElement("input")
@@ -249,7 +250,7 @@ for(k=0; k<numLevels; k++){
         	walls[i][j] = -1
         }
     }
-    
+
     for(i=0; i<boardyA[k]-1; i++){
     	for(j=0; j<boardxA[k]; j++){
         	walls[2*j][2*i+1] = hWallsA[k][i][j]
@@ -276,7 +277,7 @@ function fillRect(color,sx,sy,l,w){
 	ctx.fillStyle = color
 	ctx.fillRect(sx,sy,l,w)
 }
- 
+
 function fillCirc(color,x,y,r){
 	ctx.beginPath()
 	ctx.arc(x,y,r,0,2*pi)
@@ -474,7 +475,7 @@ function clickHandler(event){
 }
 
 
- 
+
 function update(){
 	for(i=0; i<4; i++){
     	if(pressed[i]){
@@ -486,7 +487,7 @@ function update(){
             }
         }
     }
-	
+
 	for(i=0; i<numColors; i++){
 		switched[i] = false
 	}
@@ -503,7 +504,7 @@ function update(){
 			}
 		}
 	}
-	
+
 	won = true
 	for(i=0; i<chars; i++){
 		if(positions[i][0] < marginx + cellSize * (boardx-1)){
@@ -514,17 +515,17 @@ function update(){
 		}
 	}
 
-	
+
 	drawBoard()
 
 	drawChars()
 	drawNav()
-	
+
 	if(won){
 		drawWin()
 	}
 }
- 
+
 ONE_FRAME_TIME = 1000 / 240 ;
 mainloop = function() {
 	update()
@@ -535,12 +536,3 @@ setInterval( mainloop, ONE_FRAME_TIME );
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
