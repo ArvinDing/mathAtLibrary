@@ -2,9 +2,23 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-<link rel="stylesheet" type="text/css" href="styles.css">
 <title>Math at the Library</title>
+<style>
 
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+</style>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
@@ -53,4 +67,4 @@ $(function(){
 </script>
 
 </body>
-</html>
+</html> 

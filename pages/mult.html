@@ -4,9 +4,7 @@
 <head>
 <title>Math at the Library</title>
 <style>
-body {
-	background-color: lightblue;
-}
+
 
 h2 {
 	margin-top:30px;
@@ -18,7 +16,7 @@ h2 {
 
 .default {
     color: black;
-
+	
 }
 
 .default:hover {
@@ -78,7 +76,7 @@ function begin(){
 	 ans=a;
 	 a=a*b;
 	 }
-
+	 
     document.getElementById("question").innerHTML = a+oper+b;
 	var x = Math.floor((Math.random() * 3) + 1);
 	var a1 = document.createElement("btn");
@@ -111,7 +109,7 @@ function begin(){
 	}
 	a3.innerHTML= ans+((add2==0)?add2+1: add2);
 	}
-
+	
 	 if(x==1){
 		a1.innerHTML = ans;
 	}else if(x==2){
@@ -123,7 +121,7 @@ function begin(){
 	body.appendChild(a1);
 	body.appendChild(a2);
 	body.appendChild(a3);
-
+	
 	a1.addEventListener ("click",function(){check(x,1)});
 	a2.addEventListener ("click",function(){check(x,2)});
 	a3.addEventListener ("click",function(){check(x,3)});
@@ -152,7 +150,7 @@ function check(ans, choice){
 	else
 	 document.getElementById("message").innerHTML = "Close";
 	}
-
+	
 }
 function reload(){
 location.reload();
@@ -160,4 +158,4 @@ location.reload();
 </script>
 
 </body>
-</html>
+</html> 
