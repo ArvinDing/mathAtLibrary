@@ -13,7 +13,7 @@
     float: left;
     width:520px;
     padding: 5px;
-	
+
 }
 
 .person {
@@ -58,22 +58,24 @@ img {
 </div>
 <div style="padding:20px;margin-top:0px;height:600px;">
 
-  <!--Alex--> 
+  <!--Alex-->
   <div class="column"id ="a">
 	<div class="person" id="0">
     <h2>Alex Yan</h2>
     <h3>Co-founder and Co-president</h3>
     <h3>Portola High School, Grade 10</h3>
   	<p>
-      I wanted to take part in this club because I wanted the opportunity to make a positive change in other peoples' lives. Teaching math to younger students has taught me many skills, including
-      dealing with people who have different personalities, skills, and backgrounds.
+      We founded this organization with a simple goal to make a positive change in our community with our enthusiasm in math.
+      Teaching math to younger students has taught me to be more caring and humble.
+      I have also learned many skills in time management and communication with people who have different personalities, skills, and background.
     </p>
     <p>
-      I hope to keep kids engaged and interested in math not only in school, but also outside of school and their future lives.
+      I hope to help young kids engage and become interested in math not only in school, but also outside of school and their future lives.
+      I am very excited for the opportunity to not only work with the enthusiastic volunteer friends but also these amazing kids that come to our math programs every week.
     </p>
     <img src="img/alex.jpg" title="Hello" style="float:center; width:309px;height:358px;">
 	</div>
-	
+
 	<div class="person" id ="3">
 	<h2>Grace Shao</h2>
 	<h3>Member</h3>
@@ -122,8 +124,8 @@ img {
 	   <img src="img/a.PNG" style="float:center; width:230px;height:270px;">
 	   <p> I enjoy making friends, playing games, or just simply talking. I like to have fun regardless of where I am or how. </p>
 	   <p> Doing math is a really fun hobby.  Every problem usually has 1 answer, but there are a limitless amount of ways to arrive at the answer.
-	   It's really exicting when you finally solve a problem then to find another simpler solution over and over until the answer becomes intutive. 
-	   Even around me, people such as Kevin Du and Alex Yan have been integral in my math education. After learning so much from my community I want to give back and help continue the cycle of growth. 
+	   It's really exicting when you finally solve a problem then to find another simpler solution over and over until the answer becomes intutive.
+	   Even around me, people such as Kevin Du and Alex Yan have been integral in my math education. After learning so much from my community I want to give back and help continue the cycle of growth.
 	   Helping others and the sensation of returning knowledge is one of the most rewarding feelings. <br>2019 looks fun!
 	   </p>
     </div>
@@ -155,7 +157,7 @@ intial();
  function intial(){
 	var width = window.innerWidth;
 	//alert(width);
-	
+
 	if(width<650){
 		for(var i=0;i<members;i++){
 			temp[i] = document.getElementById(i.toString()).outerHTML;
@@ -170,7 +172,7 @@ intial();
 		document.getElementById("a").style.width = "33%";
 		document.getElementById("b").style.width = "33%";
 		document.getElementById("c").style.width = "33%";
-	}	
+	}
 }
 function add(parent,child){
  //alert(temp[child]);
