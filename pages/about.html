@@ -11,9 +11,9 @@
 
 .column {
     float: left;
-    width: 480px;
+    width:520px;
     padding: 5px;
-	table-layout: fixed;
+
 }
 
 .person {
@@ -50,12 +50,6 @@ img {
 	margin-bottom: 20px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 
 </style>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -65,25 +59,30 @@ img {
 </div>
 <div style="padding:20px;margin-top:0px;height:600px;">
 
-<div class ="row">
-
   <!--Alex-->
-  <div class="column">
-	<div class="person">
+  <div class="column"id ="a">
+	<div class="person" id="0">
     <h2>Alex Yan</h2>
     <h3>Co-founder and Co-president</h3>
     <h3>Portola High School, Grade 10</h3>
   	<p>
-      I wanted to take part in this club because I wanted the opportunity to make a positive change in other peoples' lives. Teaching math to younger students has taught me many skills, including
-      dealing with people who have different personalities, skills, and backgrounds.
+      We founded this organization with a simple goal to make a positive change in our community with our enthusiasm in math.
+      Teaching math to younger students has taught me to be more caring and humble.
+      I have also learned many skills in time management and communication with people who have different personalities, skills, and background.
     </p>
     <p>
-      I hope to keep kids engaged and interested in math not only in school, but also outside of school and their future lives.
+      I hope to help young kids engage and become interested in math not only in school, but also outside of school and their future lives.
+      I am very excited for the opportunity to not only work with the enthusiastic volunteer friends but also these amazing kids that come to our math programs every week.
     </p>
     <img src="img/alex.jpg" style="float:center; width:309px;height:358px;">
 	</div>
+<<<<<<< HEAD
 	
 	<div class="person">
+=======
+
+	<div class="person" id ="3">
+>>>>>>> 68045de19cfd9ee067fd321259e22c18a0d665ba
 	<h2>Grace Shao</h2>
 	<h3>Member</h3>
     <h3>Portola High School, Grade 9</h3>
@@ -103,8 +102,8 @@ img {
   </div>
 
   <!--Kevin-->
-  <div class="column">
-    <div class="person">
+  <div class="column" id ="b">
+    <div class="person" id ="1">
     <h2>Kevin Du</h2>
 	<h3>Co-founder and Co-president</h3>
     <h3>Portola High School, Grade 10</h3>
@@ -122,8 +121,12 @@ img {
 		</p>
     <img src="img/kevin.jpg" style="float:center; width:309px;height:400px;">
 	</div>
+<<<<<<< HEAD
 	
     <div class="person">
+=======
+    <div class="person" id ="4">
+>>>>>>> 68045de19cfd9ee067fd321259e22c18a0d665ba
 	<h2>Michael Zhou</h2>
 	  <h3>Member</h3>
       <h3>Northwood High School, Grade 10</h3>
@@ -133,26 +136,31 @@ img {
   </div>
 
   <!--Arvin-->
-  <div class="column">
-    <div class="person">
+  <div class="column" id ="c">
+    <div class="person" id ="2">
     <h2>Arvin Ding</h2>
        <h3>Co-founder and Vice President</h3>
        <h3>Portola High School, Grade 10</h3>
 	   <img src="img/a.PNG" style="float:center; width:230px;height:270px;">
 	   <p> I enjoy making friends, playing games, or just simply talking. I like to have fun regardless of where I am or how. </p>
 	   <p> Doing math is a really fun hobby.  Every problem usually has 1 answer, but there are a limitless amount of ways to arrive at the answer.
-	   Its really exicting when you finally solve a problem then to find another simpler solution over and over until the answer becomes intutive. 
-	   Even around me, people such as Kevin Du and Alex Yan have been integral in my math education. After learning so much from my community I want to give back and help continue the cycle of growth. 
+	   It's really exicting when you finally solve a problem then to find another simpler solution over and over until the answer becomes intutive.
+	   Even around me, people such as Kevin Du and Alex Yan have been integral in my math education. After learning so much from my community I want to give back and help continue the cycle of growth.
 	   Helping others and the sensation of returning knowledge is one of the most rewarding feelings. <br>2019 looks fun!
 	   </p>
     </div>
+<<<<<<< HEAD
 	
 	<div class="person">
+=======
+	<div class="person" id ="5">
+>>>>>>> 68045de19cfd9ee067fd321259e22c18a0d665ba
 	<h2>Andrew Zhang</h2>
 	  <h3>Member</h3>
       <h3>Northwood High School, Grade 10</h3>
 	  <img src="img/zz.jpg" style="float:center; width:300px;height:270px;">
 	</div>
+<<<<<<< HEAD
 	
 	<div class="person">
 	<h2>Howard Zhang</h2>
@@ -162,16 +170,56 @@ img {
 	Volunteering and teaching kids math has shown me that much of the school curriculum in mathematics does not cater to each student's individual needs. Therefore, I believe that by teaching math to students and helping them individually, I am creating a positive impact in the community. This also rewards me with a sense of accomplishment as I feel like I am making a meaningful, albeit small, impact in the lives of the students. Being a teacher has led me to realize that the learning experience is not just for the students, but for the teacher as well! Therefore, I learned and gained the patience necessary to take the time to explain to children concepts that they do not understand well. I hope 2019 will be a wonderful year!
 	</p>
 	<img src="img/howard.jpg" style="float:center; width:309px;height:330px;">
+=======
+	<div class="person" id ="6">
+	<h2>AZ Li</h2>
+	  <h3>Member</h3>
+      <h3>Irvine High School, Grade 9</h3>
+	  <img src="img/AZ.jpg" style="float:center; width:300px;height:330px;">
+>>>>>>> 68045de19cfd9ee067fd321259e22c18a0d665ba
 	</div>
 	
   </div>
-</div>
+
 
 
 <script>
 $(function(){
   $("#nav-placeholder").load("nav.html");
 });
+
+var members=7;
+var temp=new Array(members);
+intial();
+
+ function intial(){
+	var width = window.innerWidth;
+	//alert(width);
+
+	if(width<650){
+		for(var i=0;i<members;i++){
+			temp[i] = document.getElementById(i.toString()).outerHTML;
+		}
+		document.getElementById('a').innerHTML="";
+		kill('b')
+		kill('c')
+		for(var i=0;i<members;i++){
+			add('a',i);
+		}
+	}else if (width>1200){
+		document.getElementById("a").style.width = "33%";
+		document.getElementById("b").style.width = "33%";
+		document.getElementById("c").style.width = "33%";
+	}
+}
+function add(parent,child){
+ //alert(temp[child]);
+ document.getElementById(parent).innerHTML +=  temp[child]
+}
+function kill(curr){
+document.getElementById(curr).outerHTML = " ";
+}
+
 </script>
 
 </body>
