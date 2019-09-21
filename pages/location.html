@@ -1,81 +1,112 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-<title>Math at the Library</title>
-<style>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <title>Math at the Library</title>
+      <style>
+         .column {
+         float: left;
+         width: 50%;
+         padding: 0px;
+         }
+         .row:after {
+         content: "";
+         display: table;
+         clear: both;
+         }
+      </style>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   </head>
+   <body>
+      <div id="nav-placeholder"></div>
+      <div style="padding:20px;margin-top:0px;height:600px;">
+      <h2 align="left">Our Locations</h2>
+      <div class ="row">
+      <div class="column">
+         <h3 > Katie Wheeler Library</h3>
+         <p>13109 Old Myford Rd, Irvine, CA 92602</p>
+         <p>Community Room on the basement floor</p>
+         <p>Tuesday 4:00pm-5:00pm starting September 10</p>
+         <div class ="row">
+            <div class="column">
+               <img src="https://c1.staticflickr.com/1/803/27146442408_fe9e8fc2cd_b.jpg" style="width:90%">
+            </div>
+            <div class="column">
+               <img src="img/IMG_4971.jpg" style="width:70%">
+            </div>
+		</div>
 
-.column {
-    float: left;
-    width: 50%;
-    padding: 0px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-</style>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
-<div id="nav-placeholder">
+            <div class ="row">
+               <div class="column">
+                  <img src="img/IMG_4973.JPG" style="width:80%">
+               </div>
+               <div class="column">
+                  <img src="img/IMG_4972.JPG" style="width:80%">
+               </div>
+            </div>
 </div>
+            <div class="column">
+               <h3 >Foothill Ranch Library</h3>
+               <p>27002 Cabriole, Foothill Ranch, CA 92610</p>
+               <p>Community Room in the building seperated from the main library</p>
+               <p>Wednesday 4:00pm-5:00pm starting October 2</p>
+               <img src="http://www.ridgela.com/wp-content/uploads/2018/05/1-31.jpg" style="width:50%">
+               <img src="img/IMG_E2877.JPG" style="width:50%">
+            </div>
+			</div>
 
-<div style="padding:20px;margin-top:0px;height:600px;">
-
-<h2 align="left">Our Locations</h2>
-
-<div class ="row">
-<div class="column">
-<h3 > Katie Wheeler Library</h3>
-<p>13109 Old Myford Rd, Irvine, CA 92602</p>
-<p>Community Room on the basement floor</p>
-<p>Tuesday 4:00pm-5:00pm</p>
-<img src="https://c1.staticflickr.com/1/803/27146442408_fe9e8fc2cd_b.jpg" style="width:70%">
-</div>
-
-<div class="column">
-<h3 >Foothill Ranch Library</h3>
-<p>27002 Cabriole, Foothill Ranch, CA 92610</p>
-<p>Community Room</p>
-<p>Tuesday 4:00pm-5:00pm</p>
-<img src="http://www.ridgela.com/wp-content/uploads/2018/05/1-31.jpg" style="width:70%">
-</div>
-
-</div>
-
-<br><br>
-<div class ="row">
-
-<div class="column">
-<h3 >University Park Library</h3>
-<p>4512 Sandburg Way, Irvine, CA 92612</p>
-<p>Community Room</p>
-<p>Wednesday 4:00pm-5:00pm</p>
-<img src="https://s3-media1.fl.yelpcdn.com/bphoto/mnM9fI7BKjVNhEcqek_Vgg/348s.jpg" style="width:60%">
-</div>
-
-
-<div class="column">
-<h3 >Heritage Park Library</h3>
-<p>14361 Yale, Irvine CA 92604</p>
-<p>Community Room (by the book store)</p>
-<p>Friday 4:00pm-4:45pm</p>
-<img src="img/IMG-7118.JPG" style="width:70%">
-</div>
-
-</div>
-
-<script>
-$(function(){
-  $("#nav-placeholder").load("nav.html");
-});
-
-</script>
-
-</body>
-</html> 
+      <div class ="row">
+      <div class="column">
+         <h3 >University Park Library</h3>
+         <p>4512 Sandburg Way, Irvine, CA 92612</p>
+         <p>Community Room</p>
+         <p>Friday 4:00pm-5:00pm starting TBD</p>
+         <div class ="row">
+            <div class="column">
+               <img src="https://s3-media1.fl.yelpcdn.com/bphoto/mnM9fI7BKjVNhEcqek_Vgg/348s.jpg" style="width:80%">
+            </div>
+            <div class="column">
+               <img src="img/sadasd.PNG" style="width:90%">
+            </div>
+         </div>
+         <div class ="row">
+            <div class="column">
+               <img src="img/IMG_2245.JPG" style="width:80%">
+            </div>
+            <div class="column">
+               <img src="img/satiscominghelpmegod.PNG" style="width:80%">
+            </div>
+         </div>
+         <div class="column">
+            <h3 >Heritage Park Library</h3>
+            <p>14361 Yale, Irvine CA 92604</p>
+            <p>Community Room (by the book store)</p>
+            <p>Monday 5:00pm-6:00pm starting September 9</p>
+                  <img src="img/IMG-7118.JPG" style="width:80%">
+                  <img src="img/who'safraidofthesat.PNG" style="width:90%">
+         </div>
+      </div>
+      <div class ="row">
+         <div class="column">
+            <h3 >El Toro Library</h3>
+            <p>24672 Raymond Way, Lake Forest, CA 92630</p>
+            <p></p>
+            <p>Thursday 4:00pm-5:00pm starting September 12</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/20140907-0222_El_Toro_Library.JPG" style="width:60%">
+         </div>
+         <div class="column">
+            <h3 >Tustin Library</h3>
+            <p>345 E. Main Street Tustin, CA 92780</p>
+            <p>TBD</p>
+            <p>TBD</p>
+            <img src="https://griffinstructures.com/wp-content/uploads/2017/10/Tustin-Lib-7-1024x450.png" style="width:70%">
+         </div>
+      </div>
+      <script>
+         $(function(){
+           $("#nav-placeholder").load("nav.html");
+         });
+         
+      </script>
+   </body>
+</html>

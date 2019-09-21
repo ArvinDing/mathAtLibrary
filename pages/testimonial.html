@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Math at the Library</title>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 2px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+<div id="nav-placeholder">
+</div>
+<div style="padding:20px;margin-top:0px;height:1500px;">
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<h1>Testimonials</h1>
+<div class="container">
+  <p>"Thank you for modeling perseverance and dedication in a cheerful environment to my son. He is scoring mostly 100%s in math"<p>
+</div>
+<div class="container">
+  <p>"The tutors speak to my son with respect and kind words. They are well-organized and find/create math problems at his level that challenge him. They have also been accommodating to work with"<p>
+</div>
+
+
+
+</body>
+</html> 

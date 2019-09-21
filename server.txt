@@ -1,0 +1,6 @@
+Go to pages folder in cygwin
+cd ../../cygdrive/c/Users/Arvin/desktop/mathAtLibrary
+py -m http.server 8000
+
+
+localhost:8000/home.html 
