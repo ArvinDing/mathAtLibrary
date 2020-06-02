@@ -119,6 +119,16 @@ h2{
 	}
 
 </style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168013662-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168013662-1');
+</script>
+
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
@@ -232,6 +242,7 @@ slideIndex=(slideIndex+slidesCnt)%slidesCnt;
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  cnt=0;
 }
 
 function showSlides(n) {
@@ -248,9 +259,14 @@ function showSlides(n) {
   slides[slideIndex].style.display = "block";
   dots[slideIndex].className += " active";
 }
-var ONE_FRAME_TIME = 7500 ;
+cnt=0;
+var ONE_FRAME_TIME = 1000 ;
 var mainloop = function() {
-	plusSlides(1)
+	cnt++;
+	
+	if(cnt==10)
+		plusSlides(1);
+	
 };
 setInterval( mainloop, ONE_FRAME_TIME )
 
