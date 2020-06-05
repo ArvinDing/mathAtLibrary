@@ -5,6 +5,12 @@
 <head>
     <title>Math at the Library</title>
     <style>
+	    p{
+		font-family:Helvetica;
+		}
+		h3{
+			font-family:Helvetica;
+		}	
         .column {
             float: left;
             width: 50%;
@@ -25,7 +31,7 @@
         
         .grid-item {
             background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
+            border: 0px solid rgba(0, 0, 0, 0.8);
             padding: 10px;
             font-size: 15px;
             text-align: center;
@@ -36,7 +42,7 @@
 
 <body>
     <div id="nav-placeholder"></div>
-    <div style="padding:20px;margin-top:0px;height:600px;">
+    <div style="padding:20px;margin-top:0px">
         <div class="grid-container">
             <div class="grid-item">
                 <h3> Katie Wheeler Library</h3>
@@ -65,7 +71,7 @@
                 <p>14361 Yale, Irvine CA 92604</p>
                 <p>Community Room (by the book store)</p>
                 <p>Monday 5:00pm-6:00pm</p>
-                <img src="http://www.ocpl.org/images/HeritageParkBanner.jpg" style="width:100%">
+                <img src="img/HeritagePark.PNG" style="width:100%">
             </div>
             <div class="grid-item">
                 <h3>El Toro Library</h3>
@@ -86,7 +92,12 @@
         $(function() {
             $("#nav-placeholder").load("nav.html");
         });
+		 $(function(){
+           $("#footer-placeholder").load("footer.html");
+         });
     </script>
 </body>
-
+<footer>
+     <div id="footer-placeholder"></div>
+   </footer>
 </html>

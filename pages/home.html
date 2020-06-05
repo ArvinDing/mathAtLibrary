@@ -1,276 +1,332 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Math at the Library</title>
-<meta name ="description" content = "Free math tutoring in Orange county, California.">
-<meta name ="keywords" content= "Free,Math,Tutoring,Tutor,Irvine,Orange County,California">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <title>Math at the Library</title>
+      <meta name ="description" content = "Free math tutoring in Orange county, California.">
+      <meta name ="keywords" content= "Free,Math,Coding class,Tutoring,Tutor,Irvine,Orange County,California">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+	 
+         body {background: white;
+         font_famliy: Helvetica; 
+		 font-size: 30px;
+         margin: 0;
+         }
+		 
+         footer {
+		 padding-top:2%;
+		 margin-left:20%;
+         background: white; 
+         font_famliy: Helvetica; 
+         }
+		 
+		  .footer-grid {
+		  padding: 5% 30% 5% 30%
+		  text-align:center;
+		  display:grid;
+         grid-template-columns: 25% 25% 25%; 
+         grid-gap: 1em;
+         grid-auto-rows: minmax(80px; auto)
+         }
+		 .title{
+		 font-size:20px
+		 }
+		 .wrapper {display:grid;
+         grid-template-columns: 50% 50%; 
+         grid-gap: 1em;
+         grid-auto-rows: minmax(50px; auto)
+         }
+         .wrapper > div {
+         background:#fff;
+		 text-align: center;
+         }	
+         .wrapper > div:nth-child(odd){
+         background:#fff;
+         }
+		 
+		
+         .mySlides {display: none
+         max-height: 300px
+         }
+         img {vertical-align: middle;}
+         p{
+         margin-bottom: 20px;
+         font-family: Helvetica;
+         }
+		 a{
+		 font-size:15px
+		 }
+		 
+         h2{
+         font-family: Helvetica;
+		 color:#0288bd;
+		 font-size:40px;
+         }
+		 
+		 h3{
+         font-family: Helvetica;
+		 color:#0288bd;
+		 font-size:20px;
+         }
+		 
+         .slideshow-container {
+         max-height: 480px;
+         /* max-width: 55%;
+         padding-left: 22.5%;*/
+         }
+         .prev, .next {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         margin-top: -22px;
+         color: white;
+         font-weight: bold;
+         font-size: 18px;
+         transition: 0.6s ease;
+         border-radius: 0 3px 3px 0;
+         }
+         .next {
+         right:0;
+         border-radius: 3px 0 0 3px;
+         }
+         .prev:hover, .next:hover {
+         background-color: rgba(0,0,0,0.8);
+         }
+         .text {
+         color: #f2f2f2;
+         font-size: 30px;
+         font-weight: bold;
+         position: absolute;
+         bottom: 8px;
+         width: 100%;
+         text-align: center;
+         color:white;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+         }
+         .numbertext {
+         color: #f2f2f2;
+         font-size: 12px;
+         padding: 8px 12px;
+         position: absolute;
+         top: 0;
+         }
+         .dot {
+         cursor: pointer;
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+         }
+         .fade {
+         -webkit-animation-name: fade;
+         -webkit-animation-duration: 1.5s;
+         animation-name: fade;
+         animation-duration: 1.5s;
+         }
+         @-webkit-keyframes fade {
+         from {opacity: .4}
+         to {opacity: 1}
+         }
+         @keyframes fade {
+         from {opacity: .4}
+         to {opacity: 1}
+         }
+         @media only screen and (max-width: 300px) {
+         .prev, .next,.text {font-size: 11px}
+         }
+         .center {
+         text-align: center;
+         }
+         .dimBack{
+         padding:10px;
+         background-color:white
+         }
+         #slidePic {
+         object-fit: cover;
+         height: 500px;
+         width:100%;
+         }
+      </style>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168013662-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-168013662-1');
+      </script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   </head>
+   <body>
+      <div id="nav-placeholder"></div>
+      <div style="margin-top:0px;padding-left:10%; padding-right:10%">
+      <div class ="dimBack">
+         <div class ="center">
+            <h1> Youth at Service</h1>
+         </div>
 
-<style>
-
-.mySlides {display: none
-max-height: 300px
-}
-img {vertical-align: middle;}
-
-p{
-  margin-bottom: 20px;
-  font-family: Helvetica;
-}
-
-
-h2{
-  font-family: Lucida Sans Unicode;
-}
-
-.slideshow-container {
-  max-height: 480px;
- /* max-width: 55%;
-    padding-left: 22.5%;*/
-
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.next {
-	right:0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  color:white;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-.center {
-  text-align: center;
-}
-.dimBack{
-	padding:10px;
-	background-color:#dedede
-}
-#slidePic {
-  object-fit: cover;
-
-    height: 500px;
-	width:100%;
-	}
-
-</style>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168013662-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-168013662-1');
-</script>
-
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
-
-
-<div id="nav-placeholder">
-</div>
-
-<div style="margin-top:0px;height:600px;">
-<div class ="dimBack">
-<div class ="center">
-<h1> Who are we?</h1>
-</div>
-<p ><font size="5">Founded in 2017 at Foothill Ranch Library, Math at the Library is a free student-run math organization to help K-8th grade students improve their academic achievement in math.
- The tutors of the Math at the Library program are a group of high school students who are passionate about math and are willing to share our interests with young learners . 
- We help students with math homework or provide additional challenging material for advanced learners.  
-</font></p>
-
-<p>
-If you are interested in being a tutor, please click <a href="contact.html">here</a> to contact us.
-</p>
-<p>
-If you are a parent interested in sending your child as a student to our program, please click <a href="location.html">here</a> to find the library closest to you and the schedule that works for your child.
-</p>
-</div>
-
-<div class="slideshow-container">
-
-<div class="mySlides"   >
-  <img src="img/slideshow/fun.JPG" id="slidePic">
-</div>
-
-<div class="mySlides fade"  >
-  <img src="img/slideshow/groupStudy.JPG" id="slidePic" >
-</div>
-
-<div class="mySlides fade" >
-    <img src="img/slideshow/d123.PNG" id="slidePic" >
-
-</div>
-
-<div class="mySlides fade" >
-  <img src="img/slideshow/IMG_6846.JPG" id="slidePic">
-</div>
-
-<div class="mySlides fade" >
-  <img src="img/slideshow/IMG-0618.JPG"  id="slidePic">
-</div>
-
-<div class="mySlides fade" >
-  <img src="img/slideshow/IMG-1145.JPG" id="slidePic">
-</div>
-
-<div class="mySlides fade" >
-  <img src="img/slideshow/IMG-1146.JPG" id="slidePic" >
-</div>
-
-<div class="mySlides fade" >
-  <img src="img/slideshow/IMG-1147.JPG" id="slidePic">
-</div>
-
-<div class="mySlides fade" >
-  <img src="img/slideshow/IMG-1150.JPG" id="slidePic">
-</div>
-
-<div class="mySlides fade" >
-  <img src="img/slideshow/foothill.JPG" id="slidePic" >
-</div>
-<div class="mySlides fade" >
-  <img src="img/slideshow/IMG_4915.JPG" id="slidePic" >
-</div>
-</div>
-
-
-
-
-<div style="text-align:left">
-  <span class="dot" onclick="currentSlide(0)"></span>
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span>
-  <span class="dot" onclick="currentSlide(10)"></span>
-
-</div>
-
-
-
-<p>
-</p>
-
-<script>
-$(function(){
-  $("#nav-placeholder").load("nav.html");
-});
-
-var slideIndex = 1;
-var slidesCnt = 10;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-slideIndex += n;
-slideIndex=(slideIndex+slidesCnt)%slidesCnt;
-  showSlides(slideIndex);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-  cnt=0;
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex].style.display = "block";
-  dots[slideIndex].className += " active";
-}
-cnt=0;
-var ONE_FRAME_TIME = 1000 ;
-var mainloop = function() {
-	cnt++;
-	
-	if(cnt==10)
-		plusSlides(1);
-	
-};
-setInterval( mainloop, ONE_FRAME_TIME )
-
-</script>
-
-</body>
+      </div>
+      <div class="wrapper">
+	     <!-- 1st row-->
+         <div>
+            <h2> Math at the Library </h2>
+            <p>Our high school volunteer tutors help K-8 students improve mathematical skills. They guide the children to enjoy and appreciate math.
+            <P><img src="img/bluecircle.png" style=" height:15%; width: 15%"> <a href="https://docs.google.com/forms/d/e/1FAIpQLScwLVpyEFrHtXAwL1j5I8IBN5Vh1zRwXdbOtyTqfLvJYossPA/viewform"
+			class="button"  style="font-size:25px";> Sign up for math lessons</a> 
+		    
+         </div>
+         <div>
+            <img style = "max-width:100%;" src="img/MAL.PNG">
+         </div>
+		
+			
+         <!-- 2nd row-->
+         <div>
+            <img style = "max-width:100%;" src="img/girlEmp.PNG">
+         </div>
+         <div>
+            <h2> Girls Empowering Girls (GEG) </h2>
+            <p>GEG focuses on teaching spoken English to girls from underdeveloped countries or regions. Our goal is to break language barriers. We use online platform to connect between tutors and students.  
+            <p><img src="img/bluecircle.png" style=" height:15%; width: 15%"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAfy5L5GA9q8YIui_t82Hz3XFWgNOUqtv0BoWrg8kQ4QiZog/viewform" 
+			class="button"  style="font-size:25px";> Sign up for English lessons</a>
+         </div>
+			
+         <!-- 3rd row--> 
+         <div>
+            <h2> Code Champion </h2>
+			<p> No previous coding experience is required. We provide free coding lessons to students at all levels. 
+		    <P>  <img src="img/bluecircle.png" style=" height:15%; width: 15%"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAfy5L5GA9q8YIui_t82Hz3XFWgNOUqtv0BoWrg8kQ4QiZog/viewform" 
+			class="button"  style="font-size:25px";> Sign up for coding lessons</a>
+           
+           <p> 
+         </div>
+         <div>
+            <img style = "max-width:100%;" src="img/codeChamp.PNG">
+         </div>
+      </div>
+	  <div> 
+	   <!-- announcement--> 
+            <h3 style="text-align:center">  Due to COVID-19, all our FREE tutoring sessions are online now. We would love to help!</h3>
+	   </div>
+	<!--
+	  <div>
+	    <img style = "width:100%;" src="img/Covid.PNG">
+      </div>
+	  -->
+	  <!-- 
+	  slideshow
+      <div class="slideshow-container">
+         <div class="mySlides"   >
+            <img src="img/slideshow/fun.JPG" id="slidePic">
+         </div>
+         <div class="mySlides fade"  >
+            <img src="img/slideshow/groupStudy.JPG" id="slidePic" >
+         </div>
+         <div class="mySlides fade" >
+            <img src="img/slideshow/d123.PNG" id="slidePic" >
+         </div>
+         <div class="mySlides fade" >
+            <img src="img/slideshow/IMG_6846.JPG" id="slidePic">
+         </div>
+         <div class="mySlides fade" >
+            <img src="img/slideshow/IMG-0618.JPG"  id="slidePic">
+         </div>
+         <div class="mySlides fade" >
+            <img src="img/slideshow/IMG-1145.JPG" id="slidePic">
+         </div>
+         <div class="mySlides fade" >
+            <img src="img/slideshow/IMG-1146.JPG" id="slidePic" >
+         </div>
+         <div class="mySlides fade" >
+            <img src="img/slideshow/IMG-1147.JPG" id="slidePic">
+         </div>
+         <div class="mySlides fade" >
+            <img src="img/slideshow/IMG-1150.JPG" id="slidePic">
+         </div>
+         <div class="mySlides fade" >
+            <img src="img/slideshow/foothill.JPG" id="slidePic" >
+         </div>
+         <div class="mySlides fade" >
+            <img src="img/slideshow/IMG_4915.JPG" id="slidePic" >
+         </div>
+      </div>
+      <div style="text-align:left">
+         <span class="dot" onclick="currentSlide(0)"></span>
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+         <span class="dot" onclick="currentSlide(4)"></span>
+         <span class="dot" onclick="currentSlide(5)"></span>
+         <span class="dot" onclick="currentSlide(6)"></span>
+         <span class="dot" onclick="currentSlide(7)"></span>
+         <span class="dot" onclick="currentSlide(8)"></span>
+         <span class="dot" onclick="currentSlide(9)"></span>
+         <span class="dot" onclick="currentSlide(10)"></span>
+      </div>
+      <p></p>
+	  -->
+      <script>
+		//alert(window.innerWidth);
+		if(window.innerWidth<450){
+	     // alert("a")
+		  var ele = document.getElementsByClassName("wrapper");
+		  ele[0].style.gridTemplateColumns = "100%" 
+		}
+        $(function(){
+           $("#nav-placeholder").load("nav.html");
+         });
+         $(function(){
+           $("#footer-placeholder").load("footer.html");
+         });
+         
+         /*var slideIndex = 1;
+         var slidesCnt = 10;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+         slideIndex += n;
+         slideIndex=(slideIndex+slidesCnt)%slidesCnt;
+           showSlides(slideIndex);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+           cnt=0;
+         }
+         
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+         
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex].style.display = "block";
+           dots[slideIndex].className += " active";
+         }
+         cnt=0;
+         var ONE_FRAME_TIME = 1000 ;
+         var mainloop = function() {
+         	cnt++;
+         	
+         	if(cnt==10)
+         		plusSlides(1);
+         	
+         };
+         setInterval( mainloop, ONE_FRAME_TIME )
+         */
+      </script>
+	  
+   </body>
+   <footer>
+     <div id="footer-placeholder"></div>
+   </footer>
 </html>

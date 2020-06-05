@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <title>About us</title>
+      <style>
+	
+		 .title{
+		 font-size:20px
+		 }
+		 
+		        * {
+         box-sizing: border-box;
+         }
+         .column {
+         float: left;
+         width:520px;
+         padding: 5px;
+         }
+         .person {
+         border: 1px solid gray;
+         margin-left: 1%;
+         margin-right: 1%;
+         margin-bottom: 20px;
+         text-align: left;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		 
+         }
+		 
+         p {
+         margin-left: 20px;
+         margin-right: 20px;
+		 margin-left:7%;
+
+         }
+		 h2 {
+		text-align: left;
+		margin-left:7%;
+		}
+
+		h3 {
+		text-align: left;
+		margin-left:7%;
+		color:#757575;
+		font-size:17px;
+		}
+		 
+         a
+         {
+         text-decoration:none
+         }
+
+         .left {
+         text-align: left;
+         }
+		 
+       
+         img:not(.logo) {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 20px;
+         width:100%;
+         }
+      </style>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   </head>
+   <script>
+      $(function(){
+        $("#nav-placeholder").load("nav.html");
+      });
+      $(function(){
+                 $("#footer-placeholder").load("footer.html");
+               });
+   </script>
+   <body>
+      <div id="nav-placeholder"></div>
+      <div style="overflow: auto;padding:20px;margin-top:0px;">
+	  
+      <div class="column">
+         <div class="person" >
+            <img src="img/alex.jpg" >
+            <h2> Alex Yan </h2>
+            <h3>Portola High School, Grade 12</h3>
+         </div>
+         <div class="person" >
+            <img src="img/cindy.jpg">
+            <h2>Cindy Ding</h2>
+            <h3>Portola High School, Grade 10</h3>
+         </div>
+         <div class="person" >
+            <img src="img/michael.jpg">
+            <h2>Michael Zhou</h2>
+            <h3>Northwood High School, Grade 12</h3>
+         </div>
+      </div>
+	  
+	  
+	  
+	  
+      <div class="column" >
+         <div class="person" >
+            <img src="img/arvin.jpg" >
+            <h2>Arvin Ding</h2>
+            <h3>Portola High School, Grade 12</h3>
+         </div>
+         <div class="person">
+            <img src="img/zz.jpg" >
+            <h2>Andrew Zhang</h2>
+            <h3>
+            Northwood High School, Grade 12
+            <h3>
+         </div>
+		 <div class="person">
+            <img src="img/patrick.jpg" >
+            <h2>Patrick Liang</h2>
+            <h3>
+            Bechman High School, Grade 10
+            <h3>
+         </div>
+      </div>
+	  
+	  
+	  
+      <div class="column" >
+      <div class="person" >
+         <img src="img/Annette.jpg">
+         <h2>Annette Yuan</h2>
+         <h3>Irvine High School, Grade 11</h3>
+      </div>
+      <div class="person" >
+         <img src="img/Daneil.jpg">
+         <h2>Daniel Chang</h2>
+         <h3>Portola High School, Grade 12</h3>
+      </div>
+    </div>
+	
+	
+		</div>
+		
+		<footer>
+      <div id="footer-placeholder"></div>
+   </footer>
+   </body>
+   <script>
+      //alert(window.innerWidth)
+      
+      if(window.innerWidth<520){
+      		  var ele = document.getElementsByClassName("column");
+      		 for(i=0;i<3;i++)
+      			ele[i].style.width = window.innerWidth+" px"; 
+      		  }
+      		
+   </script>
+   
+</html>
+
