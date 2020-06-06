@@ -4,3 +4,12 @@ py -m http.server 8000
 
 
 localhost:8000/home.html 
+
+git bach: 
+ls or dir
+cd to the directory
+git add .
+git commit
+git push
+
+
