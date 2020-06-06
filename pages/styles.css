@@ -30,22 +30,8 @@
             font-size: 15px;
             text-align: center;
         }
-		 
-         footer {
-		 padding-top:2%;
-		 margin-left:20%;
-         background: white; 
-         font_famliy: Helvetica; 
-         }
-		 
-		  .footer-grid {
-		  padding: 5% 30% 5% 30%
-		  text-align:center;
-		  display:grid;
-         grid-template-columns: 25% 25% 25%; 
-         grid-gap: 1em;
-         grid-auto-rows: minmax(80px; auto)
-         }
+		
+		
 		 .title{
 		 font-size:20px
 		 }
