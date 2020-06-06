@@ -5,151 +5,9 @@
       <meta name ="description" content = "Free math tutoring in Orange county, California.">
       <meta name ="keywords" content= "Free,Math,Coding class,Tutoring,Tutor,Irvine,Orange County,California">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-	 
-         body {background: white;
-         font_famliy: Helvetica; 
-		 font-size: 30px;
-         margin: 0;
-         }
-		 
-         footer {
-		 padding-top:2%;
-		 margin-left:20%;
-         background: white; 
-         font_famliy: Helvetica; 
-         }
-		 
-		  .footer-grid {
-		  padding: 5% 30% 5% 30%
-		  text-align:center;
-		  display:grid;
-         grid-template-columns: 25% 25% 25%; 
-         grid-gap: 1em;
-         grid-auto-rows: minmax(80px; auto)
-         }
-		 .title{
-		 font-size:20px
-		 }
-		 .wrapper {display:grid;
-         grid-template-columns: 50% 50%; 
-         grid-gap: 1em;
-         grid-auto-rows: minmax(50px; auto)
-         }
-         .wrapper > div {
-         background:#fff;
-		 text-align: center;
-         }	
-         .wrapper > div:nth-child(odd){
-         background:#fff;
-         }
-		 
-		
-         .mySlides {display: none
-         max-height: 300px
-         }
-         img {vertical-align: middle;}
-         p{
-         margin-bottom: 20px;
-         font-family: Helvetica;
-         }
-		 a{
-		 font-size:15px
-		 }
-		 
-         h2{
-         font-family: Helvetica;
-		 color:#0288bd;
-		 font-size:40px;
-         }
-		 
-		 h3{
-         font-family: Helvetica;
-		 color:#0288bd;
-		 font-size:20px;
-         }
-		 
-         .slideshow-container {
-         max-height: 480px;
-         /* max-width: 55%;
-         padding-left: 22.5%;*/
-         }
-         .prev, .next {
-         cursor: pointer;
-         position: absolute;
-         top: 50%;
-         width: auto;
-         margin-top: -22px;
-         color: white;
-         font-weight: bold;
-         font-size: 18px;
-         transition: 0.6s ease;
-         border-radius: 0 3px 3px 0;
-         }
-         .next {
-         right:0;
-         border-radius: 3px 0 0 3px;
-         }
-         .prev:hover, .next:hover {
-         background-color: rgba(0,0,0,0.8);
-         }
-         .text {
-         color: #f2f2f2;
-         font-size: 30px;
-         font-weight: bold;
-         position: absolute;
-         bottom: 8px;
-         width: 100%;
-         text-align: center;
-         color:white;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-         }
-         .numbertext {
-         color: #f2f2f2;
-         font-size: 12px;
-         padding: 8px 12px;
-         position: absolute;
-         top: 0;
-         }
-         .dot {
-         cursor: pointer;
-         height: 15px;
-         width: 15px;
-         margin: 0 2px;
-         background-color: #bbb;
-         border-radius: 50%;
-         display: inline-block;
-         transition: background-color 0.6s ease;
-         }
-         .fade {
-         -webkit-animation-name: fade;
-         -webkit-animation-duration: 1.5s;
-         animation-name: fade;
-         animation-duration: 1.5s;
-         }
-         @-webkit-keyframes fade {
-         from {opacity: .4}
-         to {opacity: 1}
-         }
-         @keyframes fade {
-         from {opacity: .4}
-         to {opacity: 1}
-         }
-         @media only screen and (max-width: 300px) {
-         .prev, .next,.text {font-size: 11px}
-         }
-         .center {
-         text-align: center;
-         }
-         .dimBack{
-         padding:10px;
-         background-color:white
-         }
-         #slidePic {
-         object-fit: cover;
-         height: 500px;
-         width:100%;
-         }
-      </style>
+      
+		<link rel="stylesheet" href="styles.css">
+     
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168013662-1"></script>
       <script>
@@ -267,7 +125,7 @@
 	  -->
       <script>
 		//alert(window.innerWidth);
-		if(window.innerWidth<450){
+		if(window.innerWidth<600){
 	     // alert("a")
 		  var ele = document.getElementsByClassName("wrapper");
 		  ele[0].style.gridTemplateColumns = "100%" 
