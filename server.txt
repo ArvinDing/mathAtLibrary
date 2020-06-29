@@ -5,7 +5,7 @@ py -m http.server 8000
 
 localhost:8000/home.html 
 
-git bach: 
+git bash: 
 ls or dir
 cd to the directory
 git add .
