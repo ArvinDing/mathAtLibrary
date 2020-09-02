@@ -28,7 +28,7 @@
             border: 0px solid rgba(0, 0, 0, 0.8);
             padding: 10px;
             font-size: 15px;
-            text-align: center;
+            text-align: left;
         }
 		
 		
@@ -55,23 +55,35 @@
          img {vertical-align: middle;}
 		 
          p{
-         margin-bottom: 20px;
+         margin-bottom: 15px;
          font-family: Helvetica;
          }
+		 
 		 a{
 		 font-size:15px
 		 }
 		 
+		 h1{
+         font-family: Helvetica;
+		 font-size:40px;
+         }
+		 
          h2{
          font-family: Helvetica;
 		 color:#0288bd;
-		 font-size:40px;
+		 font-size:30px;
          }
 		 
 		 h3{
          font-family: Helvetica;
 		 color:#0288bd;
 		 font-size:20px;
+         }
+		 
+		  h4{
+         font-family: Helvetica;
+		 color:#0288bd;
+		 font-size:16px;
          }
 		 
          .slideshow-container {

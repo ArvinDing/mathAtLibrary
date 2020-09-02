@@ -2,7 +2,7 @@ Go to pages folder in cygwin
 cd ../../cygdrive/c/Users/Arvin/desktop/mathAtLibrary    or C:\Users\leitd\Desktop\mathAtLibrary>   cd to the next folder
 py -m http.server 8000
 
-
+http://localhost:8000/pages/home.html
 localhost:8000/home.html 
 
 git bash: 
