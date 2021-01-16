@@ -1,1 +1,1 @@
-Website we created for our tutoring club.
+Website we created for our tutoring nonprofit.
