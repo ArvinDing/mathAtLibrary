@@ -1,6 +1,5 @@
 		body {
 		background: white;
-         font_famliy: Helvetica; 
 		 font-size: 30px;
          margin: 0;
          }
@@ -21,24 +20,47 @@
             display: grid;
             grid-template-columns: auto auto ;
             padding: 10px;
+            width: fit-content;
         }
         
         .grid-item {
+            transition: 0.3s all ease;
             background-color: rgba(255, 255, 255, 0.8);
             border: 0px solid rgba(0, 0, 0, 0.8);
             padding: 10px;
             font-size: 15px;
+            margin-top: 5%;
+            margin-right: 3%;
             text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
-		
+        .grid-item-{
+            transition: 0.3s all ease;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 0px solid rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            font-size: 15px;
+            margin-top: 5%;
+            margin-right: 3%;
+            text-align: left;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+
+        .grid-item:hover {
+            transition: 0.3s all ease;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
 		
 		 .title{
 		 font-size:20px
 		 }
 		 .wrapper {display:grid;
-         grid-template-columns: 50% 50%; 
-         grid-gap: 1em;
-         grid-auto-rows: minmax(50px; auto)
+            grid-template-columns: 50% 50%; 
+            grid-gap: 1em;
+            grid-auto-rows: minmax(50px, auto)
          }
          .wrapper > div {
          background:#fff;
@@ -49,7 +71,7 @@
          }
 		 
 		
-         .mySlides {display: none
+         .mySlides {display: none;
          max-height: 300px
          }
          img {vertical-align: middle;}

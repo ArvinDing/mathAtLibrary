@@ -1,198 +1,220 @@
-	
-
 <!DOCTYPE html>
 <html>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <head>
-      <title>StudySmart Youth Services</title>
-      <style>
-	
-		 .title{
-		 font-size:20px
-		 }
-		 
-		        * {
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+   <title>StudySmart Youth Services</title>
+   <style>
+      .title {
+         font-size: 20px
+      }
+
+      * {
          box-sizing: border-box;
-         }
-		 
-		 .row {
+      }
+
+      .row {
          float: left;
-         height:350px;
+         height: 350px;
          padding: 5px;
-         }
-		 
-        .column{
+      }
+
+      .column {
          float: left;
-         width:350px;
+         width: 350px;
          padding: 5px;
-         }
-         .person {
+      }
+
+      .person {
+         transition: 0.3s all ease;
          border: 1px solid gray;
          margin-left: 1%;
          margin-right: 1%;
-         margin-bottom: 10px;
+         margin-bottom: 1%;
          text-align: left;
          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-		 width:350px;
-		 height:450px;
-		 float:left;
-         }
-		 
-         p {
+         width: 350px;
+         height: 500px;
+         float: left;
+         border-radius: 10px;
+         border: none;
+      }
+      .person:hover {
+         transition: 0.3s all ease;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+      }
+
+      p {
          margin-left: 20px;
          margin-right: 20px;
-		 margin-left:7%;
-         margin-bottom:10px;
-		 margin-top: 5px;
-         }
-		 h2 {
-		text-align: left;
-		margin-left:7%;
-		margin-bottom: 10px;
-		margin-top: 10px;
-		}
+         margin-left: 7%;
+         margin-bottom: 10px;
+         margin-top: 5px;
+      }
 
-		h3 {
-		text-align: left;
-		margin-left:7%;
-		color:#757575;
-		font-size:17px;
-		}
-		 
-         a
-         {
-         text-decoration:none
-         }
-
-         .left {
+      h2 {
          text-align: left;
-         }
-		 
-       
-         img:not(.logo) {
+         margin-left: 7%;
+         margin-bottom: 10px;
+         margin-top: 10px;
+      }
+
+      h3 {
+         text-align: left;
+         margin-left: 7%;
+         color: #757575;
+         font-size: 17px;
+      }
+
+      a {
+         text-decoration: none
+      }
+
+      .left {
+         text-align: left;
+      }
+
+
+      .person img:not(.logo) {
          display: block;
          margin-left: auto;
          margin-right: auto;
          margin-bottom: 10px;
-         width:100%;
+         width: 100%;
+      }
+      .blockcontainer{
+         overflow: auto;
+         padding:20px;
+         margin-top: 5%;
+         position: relative;
+         left: 9%;
+         z-index: 1;
+      }
+      @media (max-width: 1200px) {
+         .blockcontainer{
+            overflow: auto;
+            padding:20px;
+            margin-top: 5%;
+            z-index: 1;
          }
-		     </style>
-		 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168013662-1"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'UA-168013662-1');
-      </script>
-  
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   </head>
+      }
+   </style>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168013662-1"></script>
    <script>
-      $(function(){
-        $("#nav-placeholder").load("nav.html");
-      });
-      $(function(){
-                 $("#footer-placeholder").load("footer.html");
-               });
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-168013662-1');
    </script>
-   <body>
-      <div id="nav-placeholder"></div>
-      <div style="overflow: auto;padding:20px;margin-top:0px;">
-	   
-            <div class="person" >
-            <img src="img/t_alex.jpeg" >
-            <h2> Alex Yan </h2>
-            <p>Co-founder and Co-president <br>Portola High School, Grade 12</p>
-			
-         </div>
-		 <div class="person" >
-            <img src="img/t_arvin.jpg" >
-            <h2>Arvin Ding</h2>
-			<p>Co-founder and Co-president<br>Portola High School, Grade 12</p>
-         </div>
-         <div class="person">
+
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<script>
+   $(function () {
+      $("#nav-placeholder").load("nav.html");
+   });
+   $(function () {
+      $("#footer-placeholder").load("footer.html");
+   });
+</script>
+
+<body style="height: auto;overflow: hidden;">
+   <div id="nav-placeholder"></div>
+   <div class="blockcontainer">
+
+      <div class="person">
+         <img src="img/t_alex.jpeg">
+         <h2> Alex Yan </h2>
+         <p>Co-founder and Co-president <br>Portola High School, Grade 12</p>
+
+      </div>
+      <div class="person">
+         <img src="img/t_arvin.jpg">
+         <h2>Arvin Ding</h2>
+         <p>Co-founder and Co-president<br>Portola High School, Grade 12</p>
+      </div>
+      <div class="person">
          <img src="img/t_annette.png">
          <h2>Annette Yuan</h2>
-		 <p>Founder & President of GEG<br>Irvine High School, Grade 11</p>
+         <p>Founder & President of GEG<br>Irvine High School, Grade 11</p>
       </div>
-	  
-         <div class="person" >
-            <img src="img/t_cindy.jpg">
-            <h2>Cindy Ding</h2>
-            <p>Founder & President of Code Champion<br>Portola High School, Grade 10</p>
-         </div>
-		
-	  
-         
-		 
-		 <div class="person" >
+
+      <div class="person">
+         <img src="img/t_cindy.jpg">
+         <h2>Cindy Ding</h2>
+         <p>Founder & President of Code Champion<br>Portola High School, Grade 10</p>
+      </div>
+
+
+
+
+      <div class="person">
          <img src="img/t_amanda.jpg">
          <h2>Amanda Zhu</h2>
-		 <p>VP of Curriculum<br>Portola High School, Grade 11</p>
-         </div>
-		   <div class="person" >
-            <img src="img/t_michael.jpg">
-            <h2>Michael Zhou</h2>
-            <p>VP of Communications<br>Northwood High School, Grade 12</p>
-         </div>
-		 
-	  
-	  
-	  
-     
-      <div class="person" >
+         <p>VP of Curriculum<br>Portola High School, Grade 11</p>
+      </div>
+      <div class="person">
+         <img src="img/t_michael.jpg">
+         <h2>Michael Zhou</h2>
+         <p>VP of Communications<br>Northwood High School, Grade 12</p>
+      </div>
+
+
+
+
+
+      <div class="person">
          <img src="img/t_daniel.png">
          <h2>Daniel Chang</h2>
-		 <p>VP of Operations<br>Portola High School, Grade 12</p>
+         <p>VP of Operations<br>Portola High School, Grade 12</p>
       </div>
-	   
-        <div class="person">
-            <img src="img/t_andrew.jpg" >
-			<h2>Andrew Zhang</h2>
-            <p>VP of Code Champion <br>Northwood High School, Grade 12 </p>
-         </div>
 
-	  <div class="person" >
+      <div class="person">
+         <img src="img/t_andrew.jpg">
+         <h2>Andrew Zhang</h2>
+         <p>VP of Code Champion <br>Northwood High School, Grade 12 </p>
+      </div>
+
+      <div class="person">
          <img src="img/t_cliff.jpg">
          <h2>Cliff Jin</h2>
-		 <p>Director of Curriculum<br>Sage Hill School, Grade 10</p>
+         <p>Director of Curriculum<br>Sage Hill School, Grade 10</p>
       </div>
-	 <div class="person">
-            <img src="img/t_patrick.jpg" >
-            <h2>Patrick Liang</h2>
-            <p> Director of Outreach </br>Beckman High School, Grade 10 </p>
-         </div>
-	  
-		 <div class="person" >
-            <img src="img/t_alec.jpg">
-            <h2>Alec Chu</h2>
-			<p>Director of Curriculum<br>Portola High School, Grade 11</p>
-         </div>
-		  <div class="person">
-            <img src="img/t_elizabeth.png" >
-            <h2>Elizabeth Jiang</h2>
-            <p> Director of Outreach <br>Irvine High School, Grade 11 </p>
-         </div>
+      <div class="person">
+         <img src="img/t_patrick.jpg">
+         <h2>Patrick Liang</h2>
+         <p> Director of Outreach </br>Beckman High School, Grade 10 </p>
+      </div>
 
-	
-	  
-		</div> 
-		
-		<footer>
+      <div class="person">
+         <img src="img/t_alec.jpg">
+         <h2>Alec Chu</h2>
+         <p>Director of Curriculum<br>Portola High School, Grade 11</p>
+      </div>
+      <div class="person">
+         <img src="img/t_elizabeth.png">
+         <h2>Elizabeth Jiang</h2>
+         <p> Director of Outreach <br>Irvine High School, Grade 11 </p>
+      </div>
+
+
+
+   </div>
+
+   <footer>
       <div id="footer-placeholder"></div>
    </footer>
-   </body>
-   <script>
-      //alert(window.innerWidth)
-      
-      if(window.innerWidth<520){
-      		  var ele = document.getElementsByClassName("column");
-      		 for(i=0;i<3;i++)
-      			ele[i].style.width = window.innerWidth+" px"; 
-      		  }
-      		
-   </script>
-   
-</html>
+</body>
+<script>
+   //alert(window.innerWidth)
 
+   if (window.innerWidth < 520) {
+      var ele = document.getElementsByClassName("column");
+      for (i = 0; i < 3; i++)
+         ele[i].style.width = window.innerWidth + " px";
+   }
+
+</script>
+
+</html>

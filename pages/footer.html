@@ -1,51 +1,81 @@
- <style>
-		.footer-column{
-			margin:10px;
-			font-size:16px;
-		    font-family: Arial
-		}
-		 .footer-link{
-		  color:  #ffffff;
-		  font-size:16px;
-		  font-family:Arial;
-		  text-align:left;		 
-		 }
-		 .title{
-		  color:  #5383d3;
-		  font-size:16px;
-		  font-family: Arial; 
-		 }
-		  .footer-grid {
-		 background-color: #292c2f;
-		  padding: 2% 10% 5% 20%;
-		 
-		  display:grid;
-         grid-template-columns: 40% 60%; 
-         grid-gap: 1px;
-         grid-auto-rows: minmax(10px; auto);
-         }
+<style>
+	.footer-column {
+		margin: 10px;
+		font-size: 16px;
+		font-family: Arial;
+		margin-left: -45%;
+	}
+
+	.footer-link {
+		color: #ffffff;
+		font-size: 16px;
+		font-family: Arial;
+		text-align: left;
+	}
+
+	.title {
+		color: #5383d3;
+		font-size: 16px;
+		font-family: Arial;
+	}
+
+	.footer-grid {
+		background-color: #292c2f;
+		padding: 2% 10% 5% 20%;
+		display: grid;
+		grid-template-columns: 10% 60%;
+		grid-gap: 1px;
+		grid-auto-rows: minmax(10px, auto);
+		align-items: center;
+	}
+
+	.insta {
+		margin-left: -250%;
+		margin-top: -80%;
+		cursor: pointer;
+	}
 </style>
-  <div>
-      <div class="footer-grid" style="padding-bottom:20px">
-        <div class= "footer-column">
-          <div class="title">SITE MAP </div>
-			<a href="home.html"  class='footer-link'>Home</a> <br>
-		    <a href='team.html' class='footer-link'>Our Team</a> <br>
-		  				  <a href='story.html' class='footer-link'>Our Mission</a> <br>
+
+<div class="footer-grid" style="padding-bottom:20px;">
+
+	<div class="footer-column">
+		<div class="title">SITE MAP </div>
+		<a href="home.html" class='footer-link'>Home</a> <br>
+		<a href='team.html' class='footer-link'>Our Team</a> <br>
+		<a href='story.html' class='footer-link'>Our Mission</a> <br>
 
 
-		</div>
-        <div  class="footer-column">
-			   <div class="title">JOIN US </div>
-				<a href="join.html"  class='footer-link'>Become a tutor</a> <br>
-			<!--	<a href='story.html' class='footer-link'> Partner with us</a> <br>
-				<a href='testimonial.html' class='footer-link'>Testimonials</a> <br>-->
-				
-				<a href="mailto:librarymath@gmail.com" class='footer-link'>Contact Us</a>
-				<br>
-				<a href="location.html" class='footer-link'>Find a location</a> <br>
-
-				
-	    </div>		
 	</div>
-  </div>
+	<div class="footer-column">
+		<div class="title">JOIN US </div>
+		<a href="join.html" class='footer-link'>Become a tutor</a> <br>
+		<!--	<a href='story.html' class='footer-link'> Partner with us</a> <br>
+			<a href='testimonial.html' class='footer-link'>Testimonials</a> <br>-->
+
+		<a href="mailto:librarymath@gmail.com" class='footer-link'>Contact Us</a>
+		<br>
+		<a href="location.html" class='footer-link'>Find a location</a> <br>
+
+
+	</div>
+	<div class="insta">
+		<img src="img/insta.png" height="50px" onclick="instagram()" id=instapic>
+	</div>
+</div>
+<script>
+	
+	function instagram() {
+		window.open("https://www.instagram.com/thecodechampion/")
+	}
+	var item = document.getElementById("instapic");
+	item.addEventListener("mouseover", func, false);
+	item.addEventListener("mouseout", func1, false);
+
+	function func() {  
+		item.setAttribute("src", "img/insta-color.png")
+	}
+
+	function func1() {
+		item.setAttribute("src", "img/insta.png")
+	}
+</script>

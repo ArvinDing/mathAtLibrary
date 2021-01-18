@@ -18,23 +18,23 @@
 
 <body>
     <div id="nav-placeholder"></div>
-    <div style="padding:20px;margin-top:0px">
+    <div style="padding:20px;margin-top:0px;margin-left: 2%;">
         <div class="grid-container">
-            <div class="grid-item">
+            <div class="grid-item" onclick='replacewindow(1)'>
                 <h3> Katie Wheeler Library</h3>
                 <p>13109 Old Myford Rd, Irvine, CA 92602</p>
                 <p>Community Room on the basement floor</p>
                 <p>Tuesday 4:00pm-5:00pm </p>
-                <img src="https://c1.staticflickr.com/1/803/27146442408_fe9e8fc2cd_b.jpg" style="width:90%">
+                <img src="https://c1.staticflickr.com/1/803/27146442408_fe9e8fc2cd_b.jpg" style="width:80%">
             </div>
-            <div class="grid-item">
+            <div class="grid-item" onclick='replacewindow(2)'>
                 <h3>Foothill Ranch Library</h3>
                 <p>27002 Cabriole, Foothill Ranch, CA 92610</p>
                 <p>Community Room in the building seperated from the main library</p>
                 <p>Wednesday 4:00pm-5:00pm</p>
                 <img src="http://www.ridgela.com/wp-content/uploads/2018/05/1-31.jpg" style="width:90%">
             </div>
-            <div class="grid-item">
+            <div class="grid-item" onclick='replacewindow(3)'>
                 <h3>University Park Library</h3>
                 <p>4512 Sandburg Way, Irvine, CA 92612</p>
                 <p>Community Room</p>
@@ -42,20 +42,20 @@
 
                 <img src="img/uniLibrary.PNG" style="width:80%">
             </div>
-            <div class="grid-item">
+            <div class="grid-item" onclick='replacewindow(4)'>
                 <h3>Heritage Park Library</h3>
                 <p>14361 Yale, Irvine CA 92604</p>
                 <p>Community Room (by the book store)</p>
                 <p>Monday 5:00pm-6:00pm</p>
                 <img src="img/HeritagePark.PNG" style="width:100%">
             </div>
-            <div class="grid-item">
+            <div class="grid-item" onclick='replacewindow(5)'>
                 <h3>El Toro Library</h3>
                 <p>24672 Raymond Way, Lake Forest, CA 92630</p>
                 <p>Thursday 4:00pm-5:00pm</p>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/20140907-0222_El_Toro_Library.JPG" style="width:70%">
             </div>
-             <div class="grid-item">
+             <div class="grid-item" onclick='replacewindow(6)'>
                 <h3>Mesa Verde Library</h3>
                 <p>2969 Mesa Verde Drive East, Costa Mesa, CA 92626</p>
                 <p>Monday 4:00pm-5:00pm</p>
@@ -71,6 +71,25 @@
 		 $(function(){
            $("#footer-placeholder").load("footer.html");
          });
+        function replacewindow(num){
+            switch(num){
+                case 1:
+                    window.open("https://www.google.com/maps/place/13109+Old+Myford+Rd,+Irvine,+CA+92602/@33.7298584,-117.7876943,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcdb80159aaf63:0x9dfe52e3929d9c0b!8m2!3d33.729854!4d-117.7855056")
+                case 2:
+                    window.open("https://www.google.com/maps/place/27002+Cabriole,+Foothill+Ranch,+CA+92610/@33.6805268,-117.661449,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcc2093e1cd84b:0xc72b1e423a1a8eb7!8m2!3d33.68067!4d-117.6594353")
+                case 3:
+                    window.open("https://www.google.com/maps/place/University+Park+Library,+4512+Sandburg+Way,+Irvine,+CA+92612/@33.6606767,-117.8229365,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcdddd209669d9:0xe0888b2106c297b6!8m2!3d33.6606723!4d-117.8207478")
+                case 4:
+                    window.open("https://www.google.com/maps/place/14361+Yale,+Irvine,+CA+92604/@33.6995781,-117.7806176,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcdcf754bcf62d:0xc61c54d487fa3581!8m2!3d33.6995737!4d-117.7784289")
+                case 5:
+                    window.open("https://www.google.com/maps/place/24672+Raymond+Way,+Lake+Forest,+CA+92630/@33.619484,-117.7019996,17z/data=!3m1!4b1!4m5!3m4!1s0x80dce8fa30c54bad:0xbec19395969f8d0d!8m2!3d33.6194796!4d-117.6998109")
+                case 6:
+                    window.open("https://www.google.com/maps/place/2969+Mesa+Verde+Dr+E,+Costa+Mesa,+CA+92626/@33.6792044,-117.929629,17z/data=!3m1!4b1!4m5!3m4!1s0x80dd20a725e04cc9:0xe0777a9ff9ef71a0!8m2!3d33.6792!4d-117.9274403")
+                default:
+                    
+            }
+            
+        }
     </script>
 </body>
 <footer>
