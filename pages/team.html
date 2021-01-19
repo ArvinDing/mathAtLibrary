@@ -100,10 +100,6 @@
          }
       }
 
-      .footer-grid {
-         padding-bottom: 0px;
-      }
-
       @media screen and (max-width: 600px) {
          .person {
             width: 95%;
@@ -134,7 +130,7 @@
    });
 </script>
 
-<body style="height: auto;overflow: scroll;">
+<body style="overflow: scroll;">
    <div id="nav-placeholder"></div>
    <div class="blockcontainer">
 
@@ -225,12 +221,6 @@
 
 <script>
    //alert(window.innerWidth)
-
-   if (window.innerWidth < 520) {
-      var ele = document.getElementsByClassName("column");
-      for (i = 0; i < 3; i++)
-         ele[i].style.width = window.innerWidth + " px";
-   }
 
 </script>
 
