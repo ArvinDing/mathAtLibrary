@@ -3,10 +3,7 @@
 		margin: 10px;
 		font-size: 16px;
 		font-family: Arial;
-		display:block; 
-		margin:auto;
-		position:relative;
-		float:left;
+		margin-left: -45%;
 	}
 
 	.footer-link {
@@ -24,25 +21,23 @@
 
 	.footer-grid {
 		background-color: #292c2f;
-		padding: 10px 5% 35px 10%;
+		padding: 2% 10% 5% 20%;
 		display: grid;
-		grid-template-columns: 30%;
+		grid-template-columns: 10% 60%;
 		grid-gap: 1px;
 		grid-auto-rows: minmax(10px, auto);
 		align-items: center;
-		height: 20px;
 	}
-	@media screen and (max-width:600px) {
-	}
+
 	.insta {
-		margin-left: 5%;
-		padding-top: 10px;
+		margin-left: -250%;
+		margin-top: -80%;
 		cursor: pointer;
 	}
 </style>
 
-<div class="footer-grid" >
-<!-- 
+<div class="footer-grid" style="padding-bottom:20px;">
+
 	<div class="footer-column">
 		<div class="title">SITE MAP </div>
 		<a href="home.html" class='footer-link'>Home</a> <br>
@@ -54,23 +49,23 @@
 	<div class="footer-column">
 		<div class="title">JOIN US </div>
 		<a href="join.html" class='footer-link'>Become a tutor</a> <br>
-			<a href='story.html' class='footer-link'> Partner with us</a> <br>
-			<a href='testimonial.html' class='footer-link'>Testimonials</a> <br>
+		<!--	<a href='story.html' class='footer-link'> Partner with us</a> <br>
+			<a href='testimonial.html' class='footer-link'>Testimonials</a> <br>-->
 
 		<a href="mailto:librarymath@gmail.com" class='footer-link'>Contact Us</a>
 		<br>
 		<a href="location.html" class='footer-link'>Find a location</a> <br>
 
 
-	</div> -->
+	</div>
 	<div class="insta">
-		<img style="padding-top:20px"src="img/insta.png" height="50px" onclick="instagram()" id=instapic>
+		<img src="img/insta.png" height="50px" onclick="instagram()" id=instapic>
 	</div>
 </div>
 <script>
 	
 	function instagram() {
-		window.open("https://www.instagram.com/studysmart__/")
+		window.open("https://www.instagram.com/thecodechampion/")
 	}
 	var item = document.getElementById("instapic");
 	item.addEventListener("mouseover", func, false);
