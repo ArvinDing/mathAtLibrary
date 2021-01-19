@@ -1,0 +1,102 @@
+<style>
+    body {margin:0;}
+   
+   .navbar {
+       overflow: hidden;
+       background-color: #333;
+       margin:0;
+       top:0;
+       width:100%;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+
+   /*make scrollbar transparent */
+    ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;  
+} 
+   .navbar a {
+       float: left;
+       font-size: 16px;
+       color: white;
+       text-align: center;
+       padding: 20px 20px;
+       text-decoration: none;
+   }
+   
+   
+   
+   .active  {
+       background-color: #4CAF50;
+   }
+   
+   
+   .dropdown {
+       float: left;
+       overflow: hidden;
+   }
+   
+   .dropdown .dropbtn {
+       font-size: 16px;
+       border: none;
+       outline: none;
+       color: white;
+       padding: 20px 20px;
+       background-color: inherit;
+       font-family: inherit;
+       margin: 0;
+   }
+   
+   
+   .navbar a:hover:not(.active), .dropdown:hover .dropbtn {
+       background-color: black;
+   }
+   .dropdown-content e:hover {
+       background-color: #ddd;
+   }
+   .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #666666;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+   }
+   
+   .dropdown-content a {
+       float: none;
+       color: white;
+       padding: 20px 20px;
+       text-decoration: none;
+       display: block;
+       text-align: left;
+   }
+   
+   
+   
+   .dropdown:hover .dropdown-content {
+       display: block;
+   }
+   </style>
+   <div class="navbar" >
+     <a href="home.html">Home</a>
+     <a href="story.html">Our Story</a>
+     <a href="contact.html">Contact Us</a>
+     <a href="team.html">The Team</a>
+     <a href="location.html">Locations</a>
+   <!--
+     <div class="dropdown">
+       <button class="dropbtn">Math Problems
+       </button>
+       <div class="dropdown-content">
+         <a href="comp.html">Compare</a>
+         <a href="add.html">Add/Subtract</a>
+         <a href="mult.html">Multiply/Divide</a>
+       </div>
+     </div>
+      <a href="testimonial.html">Testimonials</a> -->
+     <!--<a href="bio.html">About Us</a>-->
+   
+   <!--<img class="logo" src="img/logo.PNG" alt="Math at the Library"  width="60px">-->
+   
+   </div>

@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
   <title>StudySmart Youth Services</title>
   <link rel="stylesheet" href="styles.css">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168013662-1"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'UA-168013662-1');
-      </script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168013662-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-168013662-1');
+  </script>
+
+  <style>
+    p {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width:600px) {
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div id="nav-placeholder">
-</div>
-<div style="padding-top:2%;padding-left:10%;padding-right:10%;margin-top:0px">
+  <div id="nav-placeholder">
+  </div>
+  <div style="padding-top:2%;padding-left:10%;padding-right:10%;margin-top:0px">
 
-<p style="font-size:24px">
-StudySmart Youth Services is a student-run nonprofit organization aimed at helping K-8 students improve their academic achievements. We are dedicated high school volunteers who are passionate about learning and are eager to 
-share their passions. Founded in 2017, StudySmart Youth Services evolved from <b> Math at the Library</b> and has grown to encompass <b> Code Champion </b>, <b> Girls Empowering Girls</b>, and <b>Mathmagicians</b>.
-With online classes multiple times each week, we served have over 200 volunteers and have served 2500 hours. We strongly belive in providing free lessons to students of all backgrounds and social status.   
+    <p >
+      StudySmart Youth Services is a student-run nonprofit organization aimed at helping K-8 students improve their
+      academic achievements. We are dedicated high school volunteers who are passionate about learning and are eager to
+      share their passions. Founded in 2017, StudySmart Youth Services evolved from <b> Math at the Library</b> and has
+      grown to encompass <b> Code Champion </b>, <b> Girls Empowering Girls</b>, and <b>Mathmagicians</b>.
+      With online classes multiple times each week, we served have over 200 volunteers and have served 2500 hours. We
+      strongly belive in providing free lessons to students of all backgrounds and social status.
 
-<p>
+    <p>
 
 
-<img src="img/kw5.jpg" style="width:80%;margin-left:auto;margin-right:auto;display:block;border-radius: 10px;">
-<script>
-$(function(){
-  $("#nav-placeholder").load("nav.html");
-});
-$(function(){
-           $("#footer-placeholder").load("footer.html");
-         });
-</script>
-</div>
+      <img src="img/kw5.jpg" style="width:80%;margin-left:auto;margin-right:auto;display:block;border-radius: 10px;">
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("nav.html");
+        });
+        $(function () {
+          $("#footer-placeholder").load("footer.html");
+        });
+      </script>
+  </div>
 </body>
 
-   <footer>
-     <div id="footer-placeholder"></div>
-   </footer>
-   
+<footer>
+  <div id="footer-placeholder"></div>
+</footer>
+
 </html>

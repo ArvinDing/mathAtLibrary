@@ -39,6 +39,7 @@
          border-radius: 10px;
          border: none;
       }
+
       .person:hover {
          transition: 0.3s all ease;
          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
@@ -82,20 +83,34 @@
          margin-bottom: 10px;
          width: 100%;
       }
-      .blockcontainer{
+
+      .blockcontainer {
          overflow: auto;
-         padding:20px;
-         margin-top: 5%;
+         margin-top: 2%;
          position: relative;
          left: 9%;
          z-index: 1;
       }
+
       @media (max-width: 1200px) {
-         .blockcontainer{
+         .blockcontainer {
             overflow: auto;
-            padding:20px;
             margin-top: 5%;
             z-index: 1;
+         }
+      }
+
+      .footer-grid {
+         padding-bottom: 0px;
+      }
+
+      @media screen and (max-width: 600px) {
+         .person {
+            width: 95%;
+         }
+
+         .blockcontainer {
+            left: 2.5%;
          }
       }
    </style>
@@ -119,7 +134,7 @@
    });
 </script>
 
-<body style="height: auto;overflow: hidden;">
+<body style="height: auto;overflow: scroll;">
    <div id="nav-placeholder"></div>
    <div class="blockcontainer">
 
@@ -204,8 +219,10 @@
 
    <footer>
       <div id="footer-placeholder"></div>
+
    </footer>
 </body>
+
 <script>
    //alert(window.innerWidth)
 
