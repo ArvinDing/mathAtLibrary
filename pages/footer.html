@@ -11,6 +11,7 @@
 		font-size: 16px;
 		font-family: Arial;
 		text-align: left;
+		white-space: nowrap;
 	}
 
 	.title {
@@ -34,10 +35,22 @@
 		margin-top: -80%;
 		cursor: pointer;
 	}
+
+	@media (max-width: 900px){
+		.footer-column{
+			margin-left: auto;
+			padding-left: 50%;
+		}
+		.insta {
+			margin-left: -200%;
+			margin-top: -300%;
+			cursor: pointer;
+		}
+	}
 </style>
 
 <div class="footer-grid" style="padding-bottom:20px;">
-
+	
 	<div class="footer-column">
 		<div class="title">SITE MAP </div>
 		<a href="home.html" class='footer-link'>Home</a> <br>

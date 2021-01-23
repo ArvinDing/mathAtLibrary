@@ -10,6 +10,7 @@
         top: 0;
         width: 100%;
         font-family: Arial, Helvetica, sans-serif;
+
     }
 
     /*make scrollbar transparent */
@@ -32,7 +33,8 @@
 
     .navbar a {
         float: left;
-        font-size: 16px;
+        font-size: 20px;
+        position: relative;
         color: white;
         text-align: center;
         padding: 20px 20px;
@@ -141,6 +143,16 @@
         display: block;
         transition: 0.3s;
     }
+    .logoTop{
+        height: 58px;
+        object-fit: cover;
+    }
+    .middle{
+        margin-top: 0.7vh;
+        height: 100%;
+    }
+
+
 </style>
 <div class="navbar">
     <div class="container" onclick="yell();">
@@ -148,11 +160,15 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
     </div>
-    <a class="navLinks" href="home.html">Home</a>
-    <a class="navLinks" href="story.html">Our Story</a>
-    <a class="navLinks" href="contact.html">Contact Us</a>
-    <a class="navLinks" href="team.html">The Team</a>
-    <a class="navLinks" href="location.html">Locations</a>
+    <a class="logoTop" href="home.html" style="padding: 5px;"><img src="img/logo.png" height="58px"></a>
+    <div class="middle">
+        <a class="navLinks" href="home.html">Home</a>
+        <a class="navLinks" href="story.html">Our Story</a>
+        <a class="navLinks" href="contact.html">Contact Us</a>
+        <a class="navLinks" href="team.html">The Team</a>
+        <a class="navLinks" href="location.html">Locations</a>
+    </div>
+    
 
 </div>
 <div id="testSide" class="sidenav">
