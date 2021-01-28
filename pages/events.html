@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events - StudySmart</title>
+        <meta charset="utf-8">
+        <meta name="description" content="StudySmart Events">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Free,Irvine,Orange County,California,StudySmart,Mitchell Brin,Dr Brin">
+        <style>
+            body{
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color:black;
+            }
+            .middle{
+                border-radius: 10px;
+                text-align: center;
+                padding:5px;
+                margin:0px;
+            }
+            #title{
+                background-color: lightblue;
+            }
+            #past img{
+                width: 100%;
+            }
+            #ongoing img{
+                width: 100%;
+            }
+            #past{
+                border-radius: 10px;
+                height: 770px;
+                width: 50%;
+                overflow: scroll;
+            }
+            #ongoing{
+                border-radius: 10px;
+                /* height: 770px; */
+                width: 50%;
+                overflow: scroll;
+            }
+            h3{
+                color:lightseagreen;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <h1 class="middle" id="title">Our Events</h1>
+        <h3>Ongoing Events</h3>
+        <div id="ongoing">
+            
+        </div>
+        <h3>Past Events</h3>
+        <div id="past">
+            <img src="img/event0.png" alt="StudySmart Guest Speaker Series: Dr Mitchell Brin" title="image"><br>
+            <img src="img/event1.png" alt="StudySmart is hosting a Communication Skills Seminar!
+            Sunday, August 23, 5pm.
+            Zoom ID: 860 1882 4279
+            Zoom Passcode: 612641" title="image"><br>
+            <img src="img/event2.png" alt="Donated winter clothes to students at a rural village school in Guangxi, China.
+            Winter 2020" title="image"><br>
+        </div>
+        <script>
+            $(function(){
+                    $("#nav-placeholder").load("nav.html");
+                    $("#footer-placeholder").load("footer.html");
+            });
+        </script>
+    </body>
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+</html>
